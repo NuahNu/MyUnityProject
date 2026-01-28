@@ -1,0 +1,2965 @@
+fileFormatVersion: 2
+guid: dbf02f5b14d16ad4cb6300b7bbeed7b1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: human_enemy_red_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 293
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534e1bbe243a2e94c84fd13b99adff71
+      internalID: 539931654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 292
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84727754cba28de489328c141d20aa2a
+      internalID: -163463363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 293
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908f53fdc14248e4c98ca7893a26710e
+      internalID: 28360470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 292
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2a11c0d8d1da8468003ebb0c6c3ae9
+      internalID: -1951855321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 289
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5669a8f51a1dc7d4eabb85cca6f4c7a9
+      internalID: -1020223812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 290
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1f00538f7242c44acd626499719dba
+      internalID: 44223219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 289
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c914840699c1a1d41b2660625ae25aa7
+      internalID: 224328805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 289
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867cb9065e5bab845a55a09000bd6f32
+      internalID: -880678148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 292
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94eca572dc87e0419e6444f2b3cabe9
+      internalID: -703760098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_9
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 291
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108433a51e2fb2b4fb9efd216ef53027
+      internalID: -398700927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 292
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d532b8a8bf2c4448b9d1bb58604d341
+      internalID: -1445629331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 291
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c4622021eb7454fae389515ca4a6f1
+      internalID: 754251541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_12
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 289
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae92f58920b940144aeaf6307c41d41c
+      internalID: -369530829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 290
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63364e011d630241b871fae835bc53f
+      internalID: 114719187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_14
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 289
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835b8aa23ed54f64e9ac22fe50aa76b7
+      internalID: 851738088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_15
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 289
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e94b0c77314e94d80db4d817b00fcc
+      internalID: 636983590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 253
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1523f97d4a1081345869c4c614b908fc
+      internalID: 1740984353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 254
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c675633799e6ce14ea4ed73f66a31116
+      internalID: -813001051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_18
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 253
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe60f1b5bef7994abb5380bd291eb2d
+      internalID: -465144740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 256
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2dcf753d022084593a28379cef20ea
+      internalID: -1609449822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 253
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696f547bdac3ff649ba0930acc048f0f
+      internalID: 1376730138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 256
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be163ebe5ac8ef14e9db920efc5e7577
+      internalID: 1387185635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_22
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 257
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a6212778ab9694aa6e6f8862cc2d87
+      internalID: 1404265228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 257
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fca1a87634062d4bb4f422b2502991e
+      internalID: -1819076209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 257
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f79220cdf94b44ca7d158b4b917288
+      internalID: 1342893870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_25
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 254
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a18c18267598af4eb4e8f0c856c0bd9
+      internalID: 489999136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 254
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed72ed26a894e441b984fd342a3cc2f
+      internalID: 1624130025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_27
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 254
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cdf1c38042ab742b87ea308d9035c3
+      internalID: 1316728962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_28
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 255
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7193b26ddb9baad4aa546799d956296d
+      internalID: 1795280057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_29
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 255
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25839e9831d3b5249aa471744bebc995
+      internalID: 55694056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_30
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 255
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500fde1ba1aa66d48ab6a6862eb942ce
+      internalID: 307022761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_31
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 255
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3022efec7af642c42a66fce603741d2f
+      internalID: 1165098250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 217
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e7c675c1f9fa54fa10c106e0803d89
+      internalID: -1280533621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_33
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 217
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401e4478e92493f4ca462f1f0e3d939a
+      internalID: -1072388522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_34
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 217
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d42c52dcad5f14fbf4497d61ebd096
+      internalID: -623064502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 221
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293bc6de38ebf794fa96f6e4971ca41f
+      internalID: -1603252789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_36
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 221
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b95cb4521dba4f4987c56cda7892e9c
+      internalID: -585312715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_37
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 221
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65026b54111d7c7439cb1ba08476707f
+      internalID: 385578392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_38
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 222
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55f9310d22f9694d801e40d2cd12565
+      internalID: -1590616137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_39
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 222
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c18d6b8b7bf8d42bdf63f1cef12d4a
+      internalID: 2131934496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_40
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 222
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eff20c3b6136e468f970a8a8efa6d2
+      internalID: -105849930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_41
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 221
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f716fcdcf25550f468eb92ab332479d9
+      internalID: 1493905553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_42
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 221
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c72b0c8f764764cafa4b21c544ccad
+      internalID: -2020791520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_43
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 221
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49780c25679df29418df09a4225bcfad
+      internalID: 1634579181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_44
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 220
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb12af314e3ca7446b4facc3e912656e
+      internalID: -1699928968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_45
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 220
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68bdb2438f781d49ad76c169cf8d70a
+      internalID: -713959016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_46
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 220
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b3d52e723ddd44c9826a1feeac7694
+      internalID: -633206924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_47
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 220
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6848659b8215de4c977b6c89d816f71
+      internalID: -1945569806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_48
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 184
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61792e1eac17cbb4ebdaed06e3a69b04
+      internalID: -690780148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 184
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e0a0031104e684f8311f7e08c4a788
+      internalID: -2090651039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_50
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 184
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a6ee01023b24842a155e8cda236b1c
+      internalID: 440880319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 184
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b7990caae348e488f8b74f25a68301
+      internalID: 2134633317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_52
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 186
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012d4b5e104e49e4993a869bf4cac34d
+      internalID: -16382469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_53
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 184
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d794b8a11fb9f408162ec63dc10e63
+      internalID: -1615427396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_54
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 186
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d51ea0292579a74a84f2c3490d2d313
+      internalID: 1025889887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_55
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 186
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd2a31206da45e4dae410042fcd65a2
+      internalID: -698676377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_56
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 187
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8881d7161877dee4faf6af616e3ed9f0
+      internalID: 1759519444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_57
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 187
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc82b1ca14bfc449939469326129a45
+      internalID: -1375593763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_58
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 187
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193fd6df9e8340f4ba9c259e93d57a13
+      internalID: -1113623430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_59
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 187
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f09d7a0d422434b9a08ca2457326c7
+      internalID: -1760638312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_60
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 184
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855b19287718b1458e262ee3aaf1713
+      internalID: 433728283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_61
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 184
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fe9cadab8d49d4a9cc9da1c57427e5
+      internalID: 1483594158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_62
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 184
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0316536fc7cdc1740a79f553a37afbd7
+      internalID: -1769645002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_63
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 184
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1377fbd31b2c845b74d17b684e5790
+      internalID: 23529334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_64
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d356caed493392e42a87ae3ea21e24f0
+      internalID: -1958289755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_65
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960ece9722bde1745aae45cb95f98326
+      internalID: -1297171313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_66
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041687f1cb779294190d0029c59fa738
+      internalID: 346805349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_67
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b4adce22e260640a82724c86883771
+      internalID: -1831668061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_68
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd034d4dd2027142bde5351d6d9fb3f
+      internalID: -534342170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_69
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32539fedfe4d9043992bfc2591521a4
+      internalID: 327976453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_70
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe5d9e3ee69ab44086e2a6840623078
+      internalID: 671817526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_71
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7836cfe9e0fc4e4eb68c62108282e53
+      internalID: 1100251053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_72
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 148
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020c291966d86224983e31ad48b973c9
+      internalID: -261609761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_73
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 148
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f35ec7523c7fb248b62330cb7e4ca37
+      internalID: -1958165803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_74
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 152
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb7fb7e744d8d44bbba22df0b6f2b5c
+      internalID: -1113146368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_75
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 152
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9df6265cf4ec64193ae11a8717ea52
+      internalID: -54134597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_76
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 152
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a943c3518fe31ee47b66c6ab02c0928a
+      internalID: -1031124431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_77
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 152
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6159e18df3a9faf47bdc9cf6e36c935f
+      internalID: 1734207980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_78
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 116
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6413d95f6cd5e3f4f91e275eb25c444d
+      internalID: 682973792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_79
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 116
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9f7f2d1f4198b41804c8d893f89388
+      internalID: -1248147598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_80
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 114
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f73cdbde2277844ba88f7b3be34ecc8
+      internalID: -64609059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_81
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d862c6601b6c52418bf8590c2c12f7b
+      internalID: -642797814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_82
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 116
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b61ffc2a39418e48810e8348b4d1233
+      internalID: 1745529140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_83
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 116
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61308c8e4574e84db57c1e4c32ffc86
+      internalID: -1609972456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_84
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 114
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3c5ac263fe2914086018a0f7c5971a
+      internalID: 2018533462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_85
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 114
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676f2ada4c3dd7441a29daa4977d85a4
+      internalID: 697506254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_86
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 114
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c35409986bfc6478051ddf51640362
+      internalID: -259234839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_87
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 115
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72fe8981febefb4495038ea223d2fc7
+      internalID: -2034792172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_88
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 114
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991c44348217b2a4d8355d271796bf37
+      internalID: -1105423675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_89
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 114
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcaadc782ab1434192eb7d2e7c59260
+      internalID: -184337972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_90
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 117
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e500a15fce650b145b7fe484da76221a
+      internalID: 1333919366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_91
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 116
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9267b649ff7bdfc4dbf40e05ab5e6665
+      internalID: -962770071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_92
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 116
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e65dd07eb14524bb3aed4ad24a1330
+      internalID: 1988770848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_93
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 116
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff64d48b287adf4887654aa2ffacf55
+      internalID: -1315951077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_94
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 80
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd70bd6aa0c1cf14492416a09c9c62e8
+      internalID: 744597755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_95
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 82
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b8cd26891ea804d8e0ad2075a994bc
+      internalID: -665054470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_96
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 80
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984b03bb8a667ef4c8075ebcce0d5534
+      internalID: -1961992483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 82
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6069f6b4019f5834fadef352987f1c08
+      internalID: 586015580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_98
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 79
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d702091f388168a4e8a894b16e44e7aa
+      internalID: 964417930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_99
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 79
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244538dbb66d6c143a2b1f2ea8022836
+      internalID: 1554109004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_100
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 79
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5034e9b214d824baa859733e7bb3bd
+      internalID: -51048381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_101
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 80
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4194fa729157bf4a9da88e06a78dcfc
+      internalID: 1734489818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_102
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 80
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b716b8874918ce34483cb7a4789aa109
+      internalID: 1021056040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_103
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 82
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2973190db927eef458fd9f7936ef1106
+      internalID: -1722155077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_104
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 80
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f13612a9cc4824ba9ae5402b819641
+      internalID: -1088297891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_105
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 81
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41009849ee0a02348b61859d8dd82d23
+      internalID: 1556125514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_106
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 80
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca3b8f1ffec87749976396a4463c62d
+      internalID: -1101830000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_107
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 79
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2be894a83320347b4c2608837cd4d2
+      internalID: 1372013840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_108
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 79
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59029acf8cfb6374aac513ab875c7f45
+      internalID: 1711270299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_109
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 79
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefc2b8af9aa25a41861f745f783c761
+      internalID: 2017996315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_110
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 41
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054556111b0f3584f90757653ebc5f67
+      internalID: -1079453335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_111
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 42
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c6a211aa09823408fffd7cc497d3b6
+      internalID: -48032567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_112
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 42
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617cdf09dd5aa8f448753eaaa763fd57
+      internalID: 1880648573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_113
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 42
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaacf867df952f44bfeaa9bd9c812f4
+      internalID: -1142044184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_114
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 42
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eee668d4b1d9654e84793a76ec18499
+      internalID: 252631166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_115
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 42
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ee6b07d7b457d408bca72b08a5340e
+      internalID: -868480372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_116
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 42
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd82c9692d110c4b876240475639989
+      internalID: -1410634793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_117
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 42
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45946f24340fa6345b1af29c706c3b21
+      internalID: 889100433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_118
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 42
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0055dd6ca68986642a34080e6d25d673
+      internalID: -548558570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_119
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5de2e7ddf18b9945bb355549346ff3e
+      internalID: -820957382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_120
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 11
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0637dbf1beaf3b4584b88a4b28eeab3
+      internalID: 972516786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_121
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 10
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947850392307a9545b90192106809e4b
+      internalID: -2036320778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_122
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 10
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063d6f1ff133b454a8894a8c874be6db
+      internalID: 115422557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_123
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 7
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd94193a09756c47b801675cee52cb6
+      internalID: 1046274886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_124
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 10
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fd10c533c340a46b02df3bae0da140
+      internalID: 2045775915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_125
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 11
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67751eeae2523804aac239ee4aa47e2c
+      internalID: -1891229354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_126
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 10
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e98d4171172ae47b0cf7fc213e014f
+      internalID: 754745171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_127
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 10
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade6604cf9e58cd4d91e624fece9fdc1
+      internalID: 175631210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human_enemy_red_128
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 6
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fc6fc2ab9d22e4aa1ab02664f2bb87
+      internalID: 355412442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      human_enemy_red_0: 539931654
+      human_enemy_red_1: -163463363
+      human_enemy_red_10: -1445629331
+      human_enemy_red_100: -51048381
+      human_enemy_red_101: 1734489818
+      human_enemy_red_102: 1021056040
+      human_enemy_red_103: -1722155077
+      human_enemy_red_104: -1088297891
+      human_enemy_red_105: 1556125514
+      human_enemy_red_106: -1101830000
+      human_enemy_red_107: 1372013840
+      human_enemy_red_108: 1711270299
+      human_enemy_red_109: 2017996315
+      human_enemy_red_11: 754251541
+      human_enemy_red_110: -1079453335
+      human_enemy_red_111: -48032567
+      human_enemy_red_112: 1880648573
+      human_enemy_red_113: -1142044184
+      human_enemy_red_114: 252631166
+      human_enemy_red_115: -868480372
+      human_enemy_red_116: -1410634793
+      human_enemy_red_117: 889100433
+      human_enemy_red_118: -548558570
+      human_enemy_red_119: -820957382
+      human_enemy_red_12: -369530829
+      human_enemy_red_120: 972516786
+      human_enemy_red_121: -2036320778
+      human_enemy_red_122: 115422557
+      human_enemy_red_123: 1046274886
+      human_enemy_red_124: 2045775915
+      human_enemy_red_125: -1891229354
+      human_enemy_red_126: 754745171
+      human_enemy_red_127: 175631210
+      human_enemy_red_128: 355412442
+      human_enemy_red_13: 114719187
+      human_enemy_red_14: 851738088
+      human_enemy_red_15: 636983590
+      human_enemy_red_16: 1740984353
+      human_enemy_red_17: -813001051
+      human_enemy_red_18: -465144740
+      human_enemy_red_19: -1609449822
+      human_enemy_red_2: 28360470
+      human_enemy_red_20: 1376730138
+      human_enemy_red_21: 1387185635
+      human_enemy_red_22: 1404265228
+      human_enemy_red_23: -1819076209
+      human_enemy_red_24: 1342893870
+      human_enemy_red_25: 489999136
+      human_enemy_red_26: 1624130025
+      human_enemy_red_27: 1316728962
+      human_enemy_red_28: 1795280057
+      human_enemy_red_29: 55694056
+      human_enemy_red_3: -1951855321
+      human_enemy_red_30: 307022761
+      human_enemy_red_31: 1165098250
+      human_enemy_red_32: -1280533621
+      human_enemy_red_33: -1072388522
+      human_enemy_red_34: -623064502
+      human_enemy_red_35: -1603252789
+      human_enemy_red_36: -585312715
+      human_enemy_red_37: 385578392
+      human_enemy_red_38: -1590616137
+      human_enemy_red_39: 2131934496
+      human_enemy_red_4: -1020223812
+      human_enemy_red_40: -105849930
+      human_enemy_red_41: 1493905553
+      human_enemy_red_42: -2020791520
+      human_enemy_red_43: 1634579181
+      human_enemy_red_44: -1699928968
+      human_enemy_red_45: -713959016
+      human_enemy_red_46: -633206924
+      human_enemy_red_47: -1945569806
+      human_enemy_red_48: -690780148
+      human_enemy_red_49: -2090651039
+      human_enemy_red_5: 44223219
+      human_enemy_red_50: 440880319
+      human_enemy_red_51: 2134633317
+      human_enemy_red_52: -16382469
+      human_enemy_red_53: -1615427396
+      human_enemy_red_54: 1025889887
+      human_enemy_red_55: -698676377
+      human_enemy_red_56: 1759519444
+      human_enemy_red_57: -1375593763
+      human_enemy_red_58: -1113623430
+      human_enemy_red_59: -1760638312
+      human_enemy_red_6: 224328805
+      human_enemy_red_60: 433728283
+      human_enemy_red_61: 1483594158
+      human_enemy_red_62: -1769645002
+      human_enemy_red_63: 23529334
+      human_enemy_red_64: -1958289755
+      human_enemy_red_65: -1297171313
+      human_enemy_red_66: 346805349
+      human_enemy_red_67: -1831668061
+      human_enemy_red_68: -534342170
+      human_enemy_red_69: 327976453
+      human_enemy_red_7: -880678148
+      human_enemy_red_70: 671817526
+      human_enemy_red_71: 1100251053
+      human_enemy_red_72: -261609761
+      human_enemy_red_73: -1958165803
+      human_enemy_red_74: -1113146368
+      human_enemy_red_75: -54134597
+      human_enemy_red_76: -1031124431
+      human_enemy_red_77: 1734207980
+      human_enemy_red_78: 682973792
+      human_enemy_red_79: -1248147598
+      human_enemy_red_8: -703760098
+      human_enemy_red_80: -64609059
+      human_enemy_red_81: -642797814
+      human_enemy_red_82: 1745529140
+      human_enemy_red_83: -1609972456
+      human_enemy_red_84: 2018533462
+      human_enemy_red_85: 697506254
+      human_enemy_red_86: -259234839
+      human_enemy_red_87: -2034792172
+      human_enemy_red_88: -1105423675
+      human_enemy_red_89: -184337972
+      human_enemy_red_9: -398700927
+      human_enemy_red_90: 1333919366
+      human_enemy_red_91: -962770071
+      human_enemy_red_92: 1988770848
+      human_enemy_red_93: -1315951077
+      human_enemy_red_94: 744597755
+      human_enemy_red_95: -665054470
+      human_enemy_red_96: -1961992483
+      human_enemy_red_97: 586015580
+      human_enemy_red_98: 964417930
+      human_enemy_red_99: 1554109004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
