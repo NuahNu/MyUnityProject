@@ -65,12 +65,18 @@ public class CDoor : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        CPlayerInput.Instance.OnPointerDown(this.gameObject);
-        TogleDoor();
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            CPlayerInput.Instance.OnPointerDown(this.gameObject);
+            TogleDoor();
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         // 커서 바꾸기...
+        // 커서 
+        //eventData.pointerCurrentRaycast
+        //RaycastResult
     }
 }

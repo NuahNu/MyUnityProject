@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.U2D.Animation;
 
 
 #region CPeopleController
@@ -8,7 +10,7 @@ using UnityEngine;
 */
 #endregion
 
-public class CPeopleController : MonoBehaviour
+public class CPeopleController : MonoBehaviour, IPointerDownHandler
 {
     public interface IStateListener
     {
@@ -38,6 +40,14 @@ public class CPeopleController : MonoBehaviour
         Idle,
         Count
     }
+
+    public enum ETag
+    {
+        None = 0,
+        Ally,
+        Enemy
+    }
+
     // ftl의 이동 명령에 대해
     /*
     자신은 특정 방에 있다 라고만 알 수 있다.
@@ -49,7 +59,15 @@ public class CPeopleController : MonoBehaviour
     */
 
     #region 인스펙터
+    [Header("스프라이트 라이브러리")]
+    [SerializeField] private SpriteLibrary _spriteLibrary;
 
+    [Header("스프라이트 라이브러리 에셋")]
+    [SerializeField] private SpriteLibraryAsset _idle;
+    [SerializeField] private SpriteLibraryAsset _selected;
+
+    [Header("진영 태그")]
+    [SerializeField] private ETag _tag;
     #endregion
 
     #region 내부 변수
@@ -65,12 +83,26 @@ public class CPeopleController : MonoBehaviour
 
     void Reset()
     {
+        // 여기서 스라들 설정
+        // 초기화니까 기존애 있던 녀석 날려버리기.
+        if (_spriteLibrary != null) _spriteLibrary = null;
 
+        _spriteLibrary = GetComponent<SpriteLibrary>();
+    }
+
+    private void OnValidate()
+    {
+        if (_tag == 0)
+        {
+            Debug.LogWarning($"{this.name}의 태그 설정을 하지 않았다. 인스펙터 확인");
+        }
     }
 
     void Awake()
     {
         CacheListeners();
+
+        // 여기서 실제로 존재하는지 한번 더 확인
 
     }
 
@@ -197,5 +229,10 @@ public class CPeopleController : MonoBehaviour
 
         // =======================================================
 
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        
     }
 }
