@@ -86,7 +86,8 @@ public class CPlayerInput : MonoBehaviour
         else
         {
             // 유효하지 않은 클릭이면 해제한다.
-            Debug.Log($"{_selectedPeople.name} 선택 해제");
+            if (_selectedPeople != null)
+                Debug.Log($"{_selectedPeople.name} 선택 해제");
             _selectedPeople = null;
         }
     }
@@ -100,6 +101,6 @@ public class CPlayerInput : MonoBehaviour
                 Destroy(gameObject);
         }
         Instance = this; ;
-        
+
     }
 }

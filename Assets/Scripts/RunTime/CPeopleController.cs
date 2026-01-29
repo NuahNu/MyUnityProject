@@ -69,6 +69,12 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     [Header("진영 태그")]
     [SerializeField] private ETag _tag;
+
+    [Header("도달 거리")]
+    [SerializeField] private float _arriveDistance = 0.1f;
+
+    [Header("시작 방")]
+    //private CRoom _currentTargetRoom;
     #endregion
 
     #region 내부 변수
@@ -191,24 +197,40 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
         // 움직임 방향 정하기
         float x = 0;
         float y = 0;
+        Vector2 newDir;
+
+        x = 0;
+        y = 0;
         if (_currentTargetRoom != null)
         {
-             x = _currentTargetRoom.transform.position.x - this.transform.position.x;
-             y = _currentTargetRoom.transform.position.y - this.transform.position.y;
+            x = _currentTargetRoom.transform.position.x - this.transform.position.x;
+            y = _currentTargetRoom.transform.position.y - this.transform.position.y;
         }
 
-        Vector2 newDir = new Vector2(math.abs( x) < 0.1 ? 0 : x, math.abs(y) < 0.1 ? 0 : y);
-        newDir.Normalize();
+        newDir = new Vector2(x, y);
 
-        if (newDir != Vector2.zero && _currentDir != newDir)
+        if(_currentTargetRoom != null && newDir.magnitude < _arriveDistance)
         {
-            _currentDir = newDir;
-            NotifyDir();
-            //Debug.Log($"_currentDir = x : {newDir.x}  |  y : {newDir.y}");
+            Vector3 pos = _currentTargetRoom.transform.position;
+            pos.z = this.transform.position.z;
+            this.transform.position = pos;
         }
+        else
+        {
+            newDir.Normalize();
 
-        // 움직이기.
-        transform.Translate(newDir * Time.deltaTime * 0.35f);
+            if (newDir != Vector2.zero && _currentDir != newDir)
+            {
+                _currentDir = newDir;
+                NotifyDir();
+                //Debug.Log($"_currentDir = x : {newDir.x}  |  y : {newDir.y}");
+            }
+
+            // 움직이기.
+            transform.Translate(newDir * Time.deltaTime * 0.35f);
+        }
+        
+
 
         // 공격 방향
         x = 0;
@@ -246,36 +268,37 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     }
 
-    public void  ChageTargetRoom(CRoom targetRoom)
+    public void ChageTargetRoom(CRoom targetRoom)
     {
         // 만약 해당 방으로 들어갈 수 있다면 
-        if(targetRoom.EnterRoom(this.gameObject))
+        if (targetRoom.EnterRoom(this.gameObject))
         {
             // 기존의 방에서 나온다.
-            _currentTargetRoom.ExitRoom(this.gameObject);
+            if (_currentTargetRoom != null)
+                _currentTargetRoom.ExitRoom(this.gameObject);
 
             // 변경.
             _currentTargetRoom = targetRoom;
         }
 
-        
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(eventData.button == PointerEventData.InputButton.Left)
+        if (eventData.button == PointerEventData.InputButton.Left)
         {
-            if(CPlayerInput.Instance == null)
+            if (CPlayerInput.Instance == null)
             {
                 Debug.LogWarning("CPlayerInput.Instance == null");
                 return;
             }
-            if(this == null)
+            if (this == null)
             {
                 Debug.LogWarning("this == null");
                 return;
             }
-            if(this.gameObject == null)
+            if (this.gameObject == null)
             {
                 Debug.LogWarning("this.gameObject == null");
                 return;

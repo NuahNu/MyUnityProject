@@ -172,6 +172,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d6b48cf1d739941972533649557e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spriteLibrary: {fileID: 0}
+  _idle: {fileID: 0}
+  _selected: {fileID: 0}
+  _tag: 0
+  _arriveDistance: 0.01
 --- !u!58 &2946938776630183136
 CircleCollider2D:
   m_ObjectHideFlags: 0
