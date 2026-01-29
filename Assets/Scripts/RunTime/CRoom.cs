@@ -25,19 +25,16 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(eventData.button == PointerEventData.InputButton.Right)
-        {
-            CPlayerInput.Instance.OnPointerDown(this.gameObject);
-        }
+        CPlayerInput.Instance.OnPointerDown(eventData);
     }
 }

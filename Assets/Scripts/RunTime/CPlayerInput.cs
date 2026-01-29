@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 #region CPlayerInput
@@ -25,8 +26,6 @@ public class CPlayerInput : MonoBehaviour
     public static CPlayerInput Instance {  get; private set; }
 
     private CPeopleController _selectedPeople;
-
-    private bool _onPointerDown = false;
     #endregion
 
     void Awake()
@@ -54,7 +53,7 @@ public class CPlayerInput : MonoBehaviour
             Instance = null;
     }
 
-    public void OnPointerDown(GameObject gameObject)
+    public void OnPointerDown(PointerEventData eventData)
     {
         // 캐릭터면 선택 상태로 만든다.
         // 드래그가 가능한데, 여러개를 선택하도록 한다.
@@ -65,23 +64,31 @@ public class CPlayerInput : MonoBehaviour
         // 방은 유닛이 선택된 상태일때만
         //  노란색 하이라이트 로 표시된다.
 
-        if( gameObject.TryGetComponent(out CPeopleController peopleController))
+        if(eventData.button == PointerEventData.InputButton.Left && 
+            eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out CPeopleController peopleController))
         {
             // 선택된 오브젝트가 된다.
             _selectedPeople = peopleController;
             Debug.Log($"{_selectedPeople.name} 선택");
             // 하이라이트를 해준다.
         }
+        else if (_selectedPeople != null && eventData.button == PointerEventData.InputButton.Right &&
+            eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out CRoom room)) // 선택된 유닛이 있고, 방을 우클릭 했으면
+        {
+            // 이동 명령을 한다.
+            //_selectedPeople;
+            Debug.Log($"{_selectedPeople.name}는 {room.transform.position}로 이동한다.");
+        }
         else
         {
             // 유효하지 않은 클릭이면 해제한다.
-            _selectedPeople = null;
             Debug.Log($"{_selectedPeople.name} 선택 해제");
+            _selectedPeople = null;
         }
     }
 
     private void Update()
     {
-
+       
     }
 }
