@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 
@@ -17,17 +16,46 @@ Floor가 없어도 방들은 직접 그려야한다,.
 같은 진영의 유닛은 같은 칸에 들어갈 수 없다.
 각 room엥는 system이 설치될 수 있다.
     system...
+
+
+// 방과 문을 먼저 구현하고, 타일을 구분해보자..
 */
 #endregion
 
+[Serializable]
+public class CTile
+{
+    // 타일이 있는가
+    public bool IsTile = false;
+    // 상하좌우 이동 가능 여부
+    // 방 ID
+    public int TileIndex;
+    // 
+}
+
+[Serializable]
+public class CRoomData
+{
+    public int[] TileIndex;
+    // 이동 가능한 방 - 연결된 방
+    // 연결된 문의 위치.?
+}
+
+
+
 public class CShipFloor : MonoBehaviour
 {
-    #region 인스펙터
     
+
+    #region 인스펙터
+    [Header("타일 맵")]
+    [SerializeField] private CTile[,] _tiles;    // 타일 정보
+    [SerializeField] private GameObject[] _roomDatas;
+    [SerializeField] private GameObject[] _doors;
     #endregion
 
     #region 내부 변수
-    
+
     #endregion
 
     void Awake()
