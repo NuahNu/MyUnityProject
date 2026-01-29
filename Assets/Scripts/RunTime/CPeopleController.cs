@@ -236,6 +236,22 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
         if(eventData.button == PointerEventData.InputButton.Left)
         {
             CPlayerInput.Instance.OnPointerDown(this.gameObject);
+            if(CPlayerInput.Instance == null)
+            {
+                Debug.LogWarning("CPlayerInput.Instance == null");
+                return;
+            }
+            if(this == null)
+            {
+                Debug.LogWarning("this == null");
+                return;
+            }
+            if(this.gameObject == null)
+            {
+                Debug.LogWarning("this.gameObject == null");
+                return;
+            }
+
         }
     }
 }
