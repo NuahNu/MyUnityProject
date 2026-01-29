@@ -79,7 +79,8 @@ public class CPlayerInput : MonoBehaviour
             eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out CRoom room)) // 선택된 유닛이 있고, 방을 우클릭 했으면
         {
             // 이동 명령을 한다.
-            //_selectedPeople;
+            _selectedPeople.ChageTargetRoom(room);
+
             Debug.Log($"{_selectedPeople.name}는 {room.transform.position}로 이동한다.");
         }
         else

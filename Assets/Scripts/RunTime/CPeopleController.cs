@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.U2D.Animation;
@@ -78,6 +79,13 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
     private EPeopleState _currentState = EPeopleState.Shot;
     private Vector2 _currentDir = Vector2.down;
     private Vector2 _relativeCoordinates = Vector2.zero;
+
+    // 현재 위치 좌표 - Transform.position.
+    // 목표 위치 - Room.Trantorm.position.
+    // 정지했을때, 자신이 있는 방의 정보.
+    // -- 그냥 목표를 room 으로 하고 근접하면 멈추게.
+    // 멈추면 그 방에 있는거지.
+    private CRoom _currentTargetRoom;
 
     #endregion
 
@@ -178,13 +186,19 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     void Update()
     {
-        // =======================================================
         // 테스트
-        // 움직임 방향
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        // =======================================================
+        // 움직임 방향 정하기
+        float x = 0;
+        float y = 0;
+        if (_currentTargetRoom != null)
+        {
+             x = _currentTargetRoom.transform.position.x - this.transform.position.x;
+             y = _currentTargetRoom.transform.position.y - this.transform.position.y;
+        }
 
-        Vector2 newDir = new Vector2(x, y);
+        Vector2 newDir = new Vector2(math.abs( x) < 0.1 ? 0 : x, math.abs(y) < 0.1 ? 0 : y);
+        newDir.Normalize();
 
         if (newDir != Vector2.zero && _currentDir != newDir)
         {
@@ -193,6 +207,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
             //Debug.Log($"_currentDir = x : {newDir.x}  |  y : {newDir.y}");
         }
 
+        // 움직이기.
         transform.Translate(newDir * Time.deltaTime * 0.35f);
 
         // 공격 방향
@@ -229,6 +244,21 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
         // =======================================================
 
+    }
+
+    public void  ChageTargetRoom(CRoom targetRoom)
+    {
+        // 만약 해당 방으로 들어갈 수 있다면 
+        if(targetRoom.EnterRoom(this.gameObject))
+        {
+            // 기존의 방에서 나온다.
+            _currentTargetRoom.ExitRoom(this.gameObject);
+
+            // 변경.
+            _currentTargetRoom = targetRoom;
+        }
+
+        
     }
 
     public void OnPointerDown(PointerEventData eventData)
