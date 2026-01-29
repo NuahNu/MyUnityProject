@@ -22,9 +22,11 @@ public class CPlayerInput : MonoBehaviour
     #endregion
 
     #region 내부 변수
-
-
     public static CPlayerInput Instance {  get; private set; }
+
+    private CPeopleController _selectedPeople;
+
+    private bool _onPointerDown = false;
     #endregion
 
     void Awake()
@@ -46,11 +48,6 @@ public class CPlayerInput : MonoBehaviour
     {
 
     }
-
-    void Update()
-    {
-
-    }
     private void OnDestroy()
     {
         if (Instance == this)
@@ -67,5 +64,24 @@ public class CPlayerInput : MonoBehaviour
         // 문은 파란색 하이라이트
         // 방은 유닛이 선택된 상태일때만
         //  노란색 하이라이트 로 표시된다.
+
+        if( gameObject.TryGetComponent(out CPeopleController peopleController))
+        {
+            // 선택된 오브젝트가 된다.
+            _selectedPeople = peopleController;
+            Debug.Log($"{_selectedPeople.name} 선택");
+            // 하이라이트를 해준다.
+        }
+        else
+        {
+            // 유효하지 않은 클릭이면 해제한다.
+            _selectedPeople = null;
+            Debug.Log($"{_selectedPeople.name} 선택 해제");
+        }
+    }
+
+    private void Update()
+    {
+
     }
 }

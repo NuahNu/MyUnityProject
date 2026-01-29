@@ -233,6 +233,9 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        
+        if(eventData.button == PointerEventData.InputButton.Left)
+        {
+            CPlayerInput.Instance.OnPointerDown(this.gameObject);
+        }
     }
 }
