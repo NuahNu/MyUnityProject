@@ -67,7 +67,7 @@ public class CDoor : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            CPlayerInput.Instance.OnPointerDown(this.gameObject);
+            //CPlayerInput.Instance.OnPointerDown(this.gameObject);
             TogleDoor();
         }
     }
