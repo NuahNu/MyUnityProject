@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 #region CRoom
@@ -9,14 +8,14 @@ using UnityEngine;
 */
 #endregion
 
-public class CRoom : MonoBehaviour
+public class CRoom : MonoBehaviour, IPointerDownHandler
 {
     #region 인스펙터
-    
+
     #endregion
 
     #region 내부 변수
-    
+
     #endregion
 
     void Awake()
@@ -32,5 +31,13 @@ public class CRoom : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if(eventData.button == PointerEventData.InputButton.Right)
+        {
+            CPlayerInput.Instance.OnPointerDown(this.gameObject);
+        }
     }
 }
