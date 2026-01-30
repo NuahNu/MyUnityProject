@@ -67,16 +67,22 @@ public class CPlayerInput : MonoBehaviour
         // 방은 유닛이 선택된 상태일때만
         //  노란색 하이라이트 로 표시된다.
 
-        if (eventData.button == PointerEventData.InputButton.Left &&
-            eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out CPeopleController peopleController))
+        PointerEventData.InputButton button = eventData.button;
+        GameObject eventGameObject = eventData.pointerCurrentRaycast.gameObject;
+
+        // 유닛 선택
+        if (//eventGameObject.CompareTag("Ally") &&
+            button == PointerEventData.InputButton.Left &&
+            eventGameObject.TryGetComponent(out CPeopleController peopleController))
         {
             // 선택된 오브젝트가 된다.
             _selectedPeople = peopleController;
             Debug.Log($"{_selectedPeople.name} 선택");
             // 하이라이트를 해준다.
         }
-        else if (_selectedPeople != null && eventData.button == PointerEventData.InputButton.Right &&
-            eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out CRoom room)) // 선택된 유닛이 있고, 방을 우클릭 했으면
+        // 유닛 방 이동
+        else if (_selectedPeople != null && button == PointerEventData.InputButton.Right &&
+            eventGameObject.TryGetComponent(out CRoom room)) // 선택된 유닛이 있고, 방을 우클릭 했으면
         {
             // 이동 명령을 한다.
             _selectedPeople.ChangeTargetRoom(room);
