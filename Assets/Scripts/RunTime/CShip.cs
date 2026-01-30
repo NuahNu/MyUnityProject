@@ -43,9 +43,9 @@ public class CShip : MonoBehaviour
 
     void Awake()
     {
-        if (tag != "Ally" && tag != "Enemey")
+        if (tag != "Ally" && tag != "Enemy")
         {
-            Debug.LogError("함선의 태그를 꼭 선택해주세요. Ally or Enemey");
+            Debug.LogError("함선의 태그를 꼭 선택해주세요. Ally or Enemy");
             return;
         }
         Transform[] transforms = GetComponentsInChildren<Transform>();

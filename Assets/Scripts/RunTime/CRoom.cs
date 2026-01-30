@@ -113,7 +113,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
                     return true;
                 }
                 break;
-            case "Enemey":
+            case "Enemy":
                 if (_allys != null && _allys.Count > 0)
                 {
                     taget = _allys[0];
