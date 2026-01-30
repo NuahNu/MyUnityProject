@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -80,19 +81,27 @@ public class CPeopleAnimController : MonoBehaviour, CPeopleController.IStateList
         }
     }
 
-    public void OnDirChange(Vector2 Dir)
+    public void OnDirChange(Vector2 dir)
     {
-        int _currentDir;        // 상 하 좌 우 0 ~ 4
+        int _currentDir;        // 상 우 하 좌 0 ~ 4
+        if(math.abs(dir.x) > math.abs(dir.y))
+        {
+            if (dir.x > 0) _currentDir = 1;
+            else _currentDir = 3;
+        }
+        else if (math.abs(dir.x) < math.abs(dir.y))
+        {
+            if (dir.y > 0) _currentDir = 0;
+            else _currentDir = 2;
 
-        if (Dir.y > 0) _currentDir = 0;
-        else if (Dir.x > 0) _currentDir = 1;
-        else if (Dir.y < 0) _currentDir = 2;
-        else if (Dir.x < 0) _currentDir = 3;
+        }
         else
         {
-            //Debug.LogWarning($"이건 문제가 있다.  |  Dir = {Vector2.zero}");
-            _currentDir = 2;
+            // 둘의 변화량이 같을수가 없어야 하는데?
+            Debug.LogWarning("이 문구가 나오면 CPeopleAnimController → OnDirChange 를 확인할것");
+            _currentDir = 2;    // 오류방지용
         }
+
         //Debug.LogWarning($" Dir = {Dir}, float.{_currentDir}");
         _animator.SetFloat(_hashMoveDir, (float)_currentDir);  // 2D지만 블랜딩 중 중간 애니메이션을 사용하고 싶다면 뎀프와 델타를 사용한다.
     }
