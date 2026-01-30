@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.U2D.Animation;
@@ -72,6 +71,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     [Header("도달 거리")]
     [SerializeField] private float _arriveDistance = 0.1f;
+    [SerializeField] private float _attackDistance = 0.30f;
 
     [Header("시작 방")]
     //private CRoom _currentTargetRoom;
@@ -115,6 +115,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
     void Awake()
     {
         CacheListeners();
+        this.gameObject.tag = _tag.ToString();
 
         // 여기서 실제로 존재하는지 한번 더 확인
 
@@ -194,6 +195,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
     {
         // 테스트
         // =======================================================
+
         // 움직임 방향 정하기
         float x = 0;
         float y = 0;
@@ -209,13 +211,9 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
         newDir = new Vector2(x, y);
 
-        if(_currentTargetRoom != null && newDir.magnitude < _arriveDistance)
-        {
-            Vector3 pos = _currentTargetRoom.transform.position;
-            pos.z = this.transform.position.z;
-            this.transform.position = pos;
-        }
-        else
+        // 원할한 상태 변화를 위해 가능한 if문 연결하기.
+
+        if (_currentTargetRoom == null || newDir.magnitude > _arriveDistance)
         {
             newDir.Normalize();
 
@@ -228,11 +226,66 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
             // 움직이기.
             transform.Translate(newDir * Time.deltaTime * 0.35f);
+
+            ChangeState(EPeopleState.Walk);
         }
-        
+        else
+        {
+            Vector3 pos = _currentTargetRoom.transform.position;
+            pos.z = this.transform.position.z;
+            this.transform.position = pos;
+            ChangeState(EPeopleState.Idle);
+
+            // 강제로 아래 보도록
+            _currentDir = new Vector2(0f, -1f);
+            NotifyDir();
+
+            // 공격 대상 판별. 함수로 뺀다. - 방의 상태를 검사하는 함수라고 생각하면 될듯?
+            if (_currentTargetRoom.CheckEnemy(this.gameObject, out GameObject target))// 공격 대상이 있으면...
+            {
+                // 대상 지정해줘야함.
+                newDir = (target.transform.position - this.transform.position);
+                Vector2 dir = newDir.normalized;
+                if (_relativeCoordinates != dir)
+                {
+                    _relativeCoordinates = dir;
+                    NotifyBattle();
+                    //Debug.Log($"_relativeCoordinates = x : {newDir.x}  |  y : {newDir.y}");
+                }
+
+
+                // 근거리 공격 -- 타일 한 칸(0.35 ) 안에 있으면 근거리임. 약간의 오차는 필요할듯
+                if (newDir.magnitude < _attackDistance)
+                {
+                    ChangeState(EPeopleState.Attack);
+                }
+                // 원거리 공격
+                else
+                {
+                    ChangeState(EPeopleState.Shot);
+                }
+
+
+            }
+            else if (false) // 불끄기...
+            {
+
+            }
+            else if (false)// 수리
+            {
+
+            }
+            else if (false) // 시스템 작업
+            {
+
+            }// else {   } // idle
+        }
+
+
 
 
         // 공격 방향
+        // 한 방에 다른 공격 대상이 있으면 그 대상을 공격한다.
         x = 0;
         y = 0;
         if (Input.GetKey(KeyCode.J)) x += -1;
@@ -253,13 +306,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
         {
             if (Input.GetKey(KeyCode.Alpha1 + i))
             {
-                EPeopleState newState = (EPeopleState)i;
-                if (_currentState != newState)
-                {
-                    _currentState = newState;
-                    NotifyState();
-                    //Debug.Log($"_currentState : {newState}");
-                }
+                ChangeState((EPeopleState)i);
             }
 
         }
@@ -268,7 +315,15 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
     }
 
-    public void ChageTargetRoom(CRoom targetRoom)
+    private void ChangeState(EPeopleState newState)
+    {
+        if (_currentState != newState)
+        {
+            _currentState = newState;
+            NotifyState();
+        }
+    }
+
     public void ChangeTargetRoom(CRoom targetRoom)
     {
         // 만약 해당 방으로 들어갈 수 있다면 

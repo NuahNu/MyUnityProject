@@ -46,18 +46,83 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
     public bool EnterRoom(GameObject people)
     {
-        return true;
+        if (people.tag == "Ally")
+        {
+            if (!_allys.Contains(people))
+            {
+                _allys.Add(people);
+                return true;
+            }
+            else
+            {
+                Debug.LogWarning("이미 추가된 유닛이다.");// 이게 어떻게 가능한거지?
+            }
+        }
+        else if (people.tag == "Enemy")
+        {
+            if (!_enemys.Contains(people))
+            {
+                _enemys.Add(people);
+                return true;
+            }
+            else
+            {
+                Debug.LogWarning("이미 추가된 유닛이다.");// 이게 어떻게 가능한거지?
+            }
+        }
+        else
+        {
+            Debug.LogWarning("태그가 지정되지 않은 유닛이다.");
+        }
         return false;
     }
 
     public void ExitRoom(GameObject people)
     {
-
+        if (people.CompareTag("Ally"))
+        {
+            _allys.Remove(people);
+        }
+        else if (people.CompareTag("Enemy"))
+        {
+            _enemys.Remove(people);
+        }
+        else
+        {
+            Debug.LogWarning("태그가 지정되지 않은 유닛이다.");
+        }
     }
 
 
     public void OnPointerDown(PointerEventData eventData)
     {
         CPlayerInput.Instance.OnPointerDown(eventData);
+    }
+
+    public bool CheckEnemy(GameObject gameObject, out GameObject taget)
+    {
+        taget = null;
+        //if (gameObject.TryGetComponent(out CPeopleController pc))
+        string tag = gameObject.tag;
+        switch (tag)
+        {
+            case "Ally":
+                if (_enemys != null && _enemys.Count > 0)
+                {
+                    taget = _enemys[0];
+                    return true;
+                }
+                break;
+            case "Enemey":
+                if (_allys != null && _allys.Count > 0)
+                {
+                    taget = _allys[0];
+                    return true;
+                }
+                break;
+            default: return false;
+        }
+
+        return false;
     }
 }
