@@ -38,12 +38,21 @@ public class CShip : MonoBehaviour
 
     private void Reset()
     {
-        
+
     }
 
     void Awake()
     {
-        
+        if (tag != "Ally" && tag != "Enemey")
+        {
+            Debug.LogError("함선의 태그를 꼭 선택해주세요. Ally or Enemey");
+            return;
+        }
+        Transform[] transforms = GetComponentsInChildren<Transform>();
+        foreach (Transform childrentransform in transforms)
+        {
+            childrentransform.gameObject.tag = this.gameObject.tag;
+        }
     }
 
     void Start()
@@ -53,6 +62,6 @@ public class CShip : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 }
