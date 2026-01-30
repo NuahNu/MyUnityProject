@@ -30,11 +30,13 @@ public class CPeopleAnimController : MonoBehaviour, CPeopleController.IStateList
 
     //private bool _hasShotParam;     // mantis
     //private bool _hasRepairParam;   //
+
+    private float _currentDir;  // 상 우 하 좌 0 ~ 4
     #endregion
 
     void Reset()
     {
-        _animator = GetComponentInChildren<Animator>();
+        //_animator = GetComponentInChildren<Animator>();
     }
 
     void Awake()
@@ -67,14 +69,14 @@ public class CPeopleAnimController : MonoBehaviour, CPeopleController.IStateList
         _animator.SetInteger(_hashState, (int)changedState);
     }
 
-    public void BeforeBattle(Vector2 relativeCoordinates)
+    public void BeforeBattle(Vector2 dir)
     {
-        //Debug.Log($"relativeCoordinates : {relativeCoordinates}");
+        //Debug.Log($"_relativeCoordinates = x : {dir.x}  |  y : {dir.y}");
 
-        if (relativeCoordinates.x != 0)
-            _animator.SetFloat(_hashAttDir, relativeCoordinates.x);
-        else if (relativeCoordinates.y != 0)
-            _animator.SetFloat(_hashAttDir, relativeCoordinates.y);
+        if (_currentDir == 0 || _currentDir == 2)
+            _animator.SetFloat(_hashAttDir, dir.x);
+        else if (_currentDir == 1 || _currentDir == 3)
+            _animator.SetFloat(_hashAttDir, dir.y);
         else
         {
             _animator.SetFloat(_hashAttDir, 0);
@@ -83,7 +85,6 @@ public class CPeopleAnimController : MonoBehaviour, CPeopleController.IStateList
 
     public void OnDirChange(Vector2 dir)
     {
-        int _currentDir;        // 상 우 하 좌 0 ~ 4
         if(math.abs(dir.x) > math.abs(dir.y))
         {
             if (dir.x > 0) _currentDir = 1;

@@ -125,4 +125,19 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
         return false;
     }
+
+    public bool NeedExtinguish()
+    {
+        return false;
+    }
+
+    public bool NeedRepair()
+    {
+        return false;
+    }
+
+    public bool IsExistSystem()
+    {
+        return false;
+    }
 }

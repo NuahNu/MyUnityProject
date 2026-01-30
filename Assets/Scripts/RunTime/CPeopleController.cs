@@ -237,8 +237,8 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
             ChangeState(EPeopleState.Idle);
 
             // 강제로 아래 보도록
-            _currentDir = new Vector2(0f, -1f);
-            NotifyDir();
+            //_currentDir = new Vector2(0f, -1f);
+            //NotifyDir();
 
             // 공격 대상 판별. 함수로 뺀다. - 방의 상태를 검사하는 함수라고 생각하면 될듯?
             if (_currentTargetRoom.CheckEnemy(this.gameObject, out GameObject target))// 공격 대상이 있으면...
@@ -250,9 +250,8 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                 {
                     _relativeCoordinates = dir;
                     NotifyBattle();
-                    //Debug.Log($"_relativeCoordinates = x : {newDir.x}  |  y : {newDir.y}");
+                    //Debug.Log($"_relativeCoordinates = x : {dir.x}  |  y : {dir.y}");
                 }
-
 
                 // 근거리 공격 -- 타일 한 칸(0.35 ) 안에 있으면 근거리임. 약간의 오차는 필요할듯
                 if (newDir.magnitude < _attackDistance)
@@ -265,19 +264,18 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                     ChangeState(EPeopleState.Shot);
                 }
 
-
             }
-            else if (false) // 불끄기...
+            else if (_currentTargetRoom.NeedExtinguish()) // 불끄기...
             {
-
+                ChangeState(EPeopleState.Extinguish);
             }
-            else if (false)// 수리
+            else if (_currentTargetRoom.NeedRepair())// 수리
             {
-
+                ChangeState(EPeopleState.Repair);
             }
-            else if (false) // 시스템 작업
+            else if (_currentTargetRoom.IsExistSystem()) // 시스템 작업
             {
-
+                ChangeState(EPeopleState.Work);
             }// else {   } // idle
         }
 
@@ -286,30 +284,20 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
 
         // 공격 방향
         // 한 방에 다른 공격 대상이 있으면 그 대상을 공격한다.
-        x = 0;
-        y = 0;
-        if (Input.GetKey(KeyCode.J)) x += -1;
-        if (Input.GetKey(KeyCode.K)) y += -1;
-        if (Input.GetKey(KeyCode.L)) x += 1;
-        if (Input.GetKey(KeyCode.I)) y += 1;
+        //x = 0;
+        //y = 0;
+        //if (Input.GetKey(KeyCode.J)) x += -1;
+        //if (Input.GetKey(KeyCode.K)) y += -1;
+        //if (Input.GetKey(KeyCode.L)) x += 1;
+        //if (Input.GetKey(KeyCode.I)) y += 1;
 
-        newDir = new Vector2(x, y);
-        if (_relativeCoordinates != newDir)
-        {
-            _relativeCoordinates = newDir;
-            NotifyBattle();
-            //Debug.Log($"_relativeCoordinates = x : {newDir.x}  |  y : {newDir.y}");
-        }
-
-        // 상태 변경
-        for (int i = 0; i < (int)EPeopleState.Count; i++)
-        {
-            if (Input.GetKey(KeyCode.Alpha1 + i))
-            {
-                ChangeState((EPeopleState)i);
-            }
-
-        }
+        //newDir = new Vector2(x, y);
+        //if (_relativeCoordinates != newDir)
+        //{
+        //    _relativeCoordinates = newDir;
+        //    NotifyBattle();
+        //    //Debug.Log($"_relativeCoordinates = x : {newDir.x}  |  y : {newDir.y}");
+        //}
 
         // =======================================================
 
