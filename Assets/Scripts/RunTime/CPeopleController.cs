@@ -269,6 +269,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
     }
 
     public void ChageTargetRoom(CRoom targetRoom)
+    public void ChangeTargetRoom(CRoom targetRoom)
     {
         // 만약 해당 방으로 들어갈 수 있다면 
         if (targetRoom.EnterRoom(this.gameObject))
