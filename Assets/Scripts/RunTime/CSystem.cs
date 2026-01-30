@@ -22,7 +22,9 @@ ui
 public class CSystem : MonoBehaviour
 {
     #region 인스펙터
-    
+    // 그려낼 프리팹
+    [Header("인테리어 프리팹")]
+    [SerializeField] private CInterior interior;
     #endregion
 
     #region 내부 변수
