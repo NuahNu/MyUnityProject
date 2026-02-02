@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,9 +15,29 @@ using UnityEngine.EventSystems;
 
 public class CRoom : MonoBehaviour, IPointerDownHandler
 {
+    [Flags]
+    public enum EDoorPosition
+    {
+        UpLeft = 1 << 0,
+        UpRight = 1 << 1,
+        RightUp = 1 << 2,
+        RightDown = 1 << 3,
+        DownLeft = 1 << 4,
+        DownRight = 1 << 5,
+        LeftUp = 1 << 6,
+        LeftDown = 1 << 7,
+        Up = UpLeft | UpRight,
+        Rigth = RightUp | RightDown,
+        Down = DownLeft | DownRight,
+        Left = LeftUp | LeftDown
+
+    }
     #region 인스펙터
-    [Header("몇칸")]
+    [Header("크기")]
     [SerializeField] private int _sizeOfRoom;
+
+    [Header("문의 위치")]
+    [SerializeField] private EDoorPosition _doorPosition;
 
     [Header("들어가있을 예정인 객체들")]
     [SerializeField] private List<GameObject> _allys;
