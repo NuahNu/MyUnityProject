@@ -21,14 +21,34 @@ ui
 
 public class CSystem : MonoBehaviour
 {
+    // 우선순위, UI 출력순서도 겸한다.
     public enum ESystemType
     {
-
+        Shields,
+        Engines,
+        Oxygen,
+        Weapons,
+        Drones,
+        Medbay,
+        Pilot,
+        Sensors,
+        Door,
+        Cloaking,
+        Teleporter,
+        Count
     }
     #region 인스펙터
-    // 그려낼 프리팹
-    [Header("인테리어 프리팹")]
+    // 그려낼 프리팹 - 타일맵 위에 보이는건 여기서?
+    [Header("인테리어 프리팹 ( 함선에서 추가하면 자동으로 설정됨. )")]
     [SerializeField] private CInterior interior;
+
+
+    // UI 를 담당할 친구 하나 추가.
+
+
+    // 연결된 방
+    // 
+    // 
     #endregion
 
     #region 내부 변수
@@ -42,6 +62,11 @@ public class CSystem : MonoBehaviour
         // 문의 위치에 따라서 다른 프리팹을 가져와야한다.
         // enumFlag로 방과 비교해 걸리는게 없어야 가능하다.
         // 시스템의 종류와 방의 정보를 갖고 설치를 시도한다.
+    }
+
+    void SetSystem(CRoom room, ESystemType type)
+    {
+
     }
 
     void Start()
