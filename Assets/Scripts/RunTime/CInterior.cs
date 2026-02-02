@@ -18,18 +18,7 @@ public class CInterior : MonoBehaviour
         Count
     }
 
-    [Flags]
-    public enum EEquipmentPosition
-    {
-        UpLeft = 1 << 0,
-        UpRight = 1 << 1,
-        RightUp = 1 << 2,
-        RightDown = 1 << 3,
-        DownLeft = 1 << 4,
-        DownRight = 1 << 5,
-        LeftUp = 1 << 6,
-        LeftDown = 1 << 7,
-    }
+    
 
     #region 인스펙터
     [Header("메인 이미지")]
@@ -49,6 +38,9 @@ public class CInterior : MonoBehaviour
 
     [Header("장비 위치")]
     [SerializeField] private EEquipmentPosition _equipmentPosition;
+
+    [Header("시스템 타입 (서로 다른 스크립트에서 중복 검사를 위한 값)")]
+    [SerializeField] private CSystem.ESystemType _systemType;
     #endregion
 
     #region 내부 변수

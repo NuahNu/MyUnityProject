@@ -273,7 +273,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
             {
                 ChangeState(EPeopleState.Repair);
             }
-            else if (_currentTargetRoom.IsExistSystem()) // 시스템 작업
+            else if (_currentTargetRoom.IsExistSystem) // 시스템 작업
             {
                 ChangeState(EPeopleState.Work);
             }// else {   } // idle

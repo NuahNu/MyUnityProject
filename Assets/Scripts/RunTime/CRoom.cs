@@ -15,23 +15,7 @@ using UnityEngine.EventSystems;
 
 public class CRoom : MonoBehaviour, IPointerDownHandler
 {
-    [Flags]
-    public enum EDoorPosition
-    {
-        UpLeft = 1 << 0,
-        UpRight = 1 << 1,
-        RightUp = 1 << 2,
-        RightDown = 1 << 3,
-        DownLeft = 1 << 4,
-        DownRight = 1 << 5,
-        LeftUp = 1 << 6,
-        LeftDown = 1 << 7,
-        Up = UpLeft | UpRight,
-        Rigth = RightUp | RightDown,
-        Down = DownLeft | DownRight,
-        Left = LeftUp | LeftDown
-
-    }
+    
     #region 인스펙터
     [Header("크기")]
     [SerializeField] private int _sizeOfRoom;
@@ -44,11 +28,18 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     [SerializeField] private List<GameObject> _enemys;
     // 지금 당장 들어가 있지 않아도 들어갈 예정이라고 예약한다.
     // 따라서 미리 들어가도록 명령이 되어있다면 다른 녀석들이 못 들어가는게 맞다.
+
+    [Header("설치된 시스템")]
+    [ReadOnly]
+    [SerializeField] private CSystem _system;
     #endregion
 
     #region 내부 변수
 
     #endregion
+
+    public bool IsExistSystem {  get { return _system != null; } }
+    public int SizeOfRoom {  get { return _sizeOfRoom; } }
 
     void Awake()
     {
@@ -171,8 +162,15 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         return false;
     }
 
-    public bool IsExistSystem()
+
+    internal bool Install(CSystem.ESystemType type)
     {
-        return false;
+        CSystem newSystem = this.gameObject.AddComponent<CSystem>();
+
+        newSystem.Init(this, type);
+
+        _system = newSystem;
+
+        return _system.IsExistInterior;
     }
 }

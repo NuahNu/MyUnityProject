@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -40,9 +41,12 @@ public class CSystem : MonoBehaviour
     #region 인스펙터
     // 그려낼 프리팹 - 타일맵 위에 보이는건 여기서?
     [Header("인테리어 프리팹 ( 함선에서 추가하면 자동으로 설정됨. )")]
-    [SerializeField] private CInterior interior;
+    [ReadOnly]
+    [SerializeField] private CInterior _interior;
 
-
+    [Header("시스템 타입")]
+    [ReadOnly]
+    [SerializeField] private ESystemType _systemType;
     // UI 를 담당할 친구 하나 추가.
 
 
@@ -54,7 +58,10 @@ public class CSystem : MonoBehaviour
     #region 내부 변수
     // 레벨
     // 소속된 방.
+    private CRoom _room;
     #endregion
+
+    public bool IsExistInterior { get { return _interior != null; } }
 
     void Awake()
     {
@@ -62,11 +69,6 @@ public class CSystem : MonoBehaviour
         // 문의 위치에 따라서 다른 프리팹을 가져와야한다.
         // enumFlag로 방과 비교해 걸리는게 없어야 가능하다.
         // 시스템의 종류와 방의 정보를 갖고 설치를 시도한다.
-    }
-
-    void SetSystem(CRoom room, ESystemType type)
-    {
-
     }
 
     void Start()
@@ -77,5 +79,17 @@ public class CSystem : MonoBehaviour
     void Update()
     {
         
+    }
+
+    internal void Init(CRoom cRoom, ESystemType type)
+    {
+        // 방 연결
+        _room = cRoom;
+
+        // 타입별 프리팹 체크 후 설치
+        //cRoom.SizeOfRoom;
+        //type; // 이 타입이 가능한 사이즈 등
+
+        //  인테리어를 고르라는 뜻
     }
 }

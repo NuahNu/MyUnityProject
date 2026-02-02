@@ -30,10 +30,19 @@ public class CShip : MonoBehaviour
     [SerializeField] private GameObject _base;
     [SerializeField] private GameObject _floor;
     //[SerializeField] private GameObject _ui;
+
+    [Header("시스템 설치 가능 방")]
+    [SerializeField] private CRoom[] _rooms;
+
+    [Header("기본 설치 시스템")]
+    [SerializeField] private List<CSystem.ESystemType> _eSystems;
+    // 컨트롤 도어 센서 메디, 산소, 실드 엔진 무기 등.
+    // 추가 순서는 System의 enum 참고
     #endregion
 
     #region 내부 변수
     //private Dictionary<GameObject, string> childObjects; 
+    //
     #endregion
 
     private void Reset()
@@ -63,5 +72,36 @@ public class CShip : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public bool AddSystem(CSystem.ESystemType type)
+    {
+        // 배열을 탐색해 설치 가능한 방이 남았는지 확인
+        // floor 라는 .cs를 따로 만들어야 하는가
+        bool success = false;
+
+        for (int i = 0; i < _rooms.Length; i++)
+        {
+            // 돌면서 빈방에 설치
+            if (_rooms[i].IsExistSystem)
+            {
+                success = _rooms[i].Install(type);
+            }
+            if (success) break;
+        }
+        if (success)
+        {
+            // 설치 성공
+        }
+        else
+        {
+            // 설치 실패
+        }
+
+        // 성공시 대충 다 연결
+
+        // 성공 여부 반환
+
+        return false;
     }
 }
