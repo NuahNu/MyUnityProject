@@ -71,8 +71,15 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         {
             if (!_allys.Contains(people))
             {
-                _allys.Add(people);
-                return true;
+                if(_allys.Count <  _sizeOfRoom)
+                {
+                    _allys.Add(people);
+                    return true;
+                }
+                else
+                {
+                    Debug.LogWarning("인원 초과.");
+                }
             }
             else
             {
@@ -83,8 +90,15 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         {
             if (!_enemys.Contains(people))
             {
-                _enemys.Add(people);
-                return true;
+                if (_enemys.Count < _sizeOfRoom)
+                {
+                    _enemys.Add(people);
+                    return true;
+                }
+                else
+                {
+                    Debug.LogWarning("인원 초과.");
+                }
             }
             else
             {

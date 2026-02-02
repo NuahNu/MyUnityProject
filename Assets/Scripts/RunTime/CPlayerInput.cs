@@ -87,7 +87,7 @@ public class CPlayerInput : MonoBehaviour
             // 이동 명령을 한다.
             _selectedPeople.ChangeTargetRoom(room);
 
-            Debug.Log($"{_selectedPeople.name}는 {room.transform.position}로 이동한다.");
+            //Debug.Log($"{_selectedPeople.name}는 {room.transform.position}로 이동한다.");
         }
         else
         {
