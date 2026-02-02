@@ -278,29 +278,6 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                 ChangeState(EPeopleState.Work);
             }// else {   } // idle
         }
-
-
-
-
-        // 공격 방향
-        // 한 방에 다른 공격 대상이 있으면 그 대상을 공격한다.
-        //x = 0;
-        //y = 0;
-        //if (Input.GetKey(KeyCode.J)) x += -1;
-        //if (Input.GetKey(KeyCode.K)) y += -1;
-        //if (Input.GetKey(KeyCode.L)) x += 1;
-        //if (Input.GetKey(KeyCode.I)) y += 1;
-
-        //newDir = new Vector2(x, y);
-        //if (_relativeCoordinates != newDir)
-        //{
-        //    _relativeCoordinates = newDir;
-        //    NotifyBattle();
-        //    //Debug.Log($"_relativeCoordinates = x : {newDir.x}  |  y : {newDir.y}");
-        //}
-
-        // =======================================================
-
     }
 
     private void ChangeState(EPeopleState newState)

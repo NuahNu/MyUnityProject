@@ -86,11 +86,6 @@ public class CInterior : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-
-    }
-
     public void ChangeState(EInterState state)
     {
         if (!_isUseGlow) return; // 점등 효과가 없는 것들도 있더라..
