@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainSpriteRenderer: {fileID: 7458341266387902438}
   _mainSprite: {fileID: 21300000, guid: d2b9ec6d4c041cb4f92d5743d32ce4b9, type: 3}
+  _isUseGlow: 1
   _glowSpriteRenderer: {fileID: 5316299184933795333}
   _glowSprites:
   - {fileID: 21300000, guid: 8afdc2c1659db404e96d9211e47c4453, type: 3}
@@ -191,3 +192,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f79191fd09804b04285d4bba13acf80e, type: 3}
   _size: 4
   _equipmentPosition: 195
+  _systemType: 6
