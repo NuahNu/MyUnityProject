@@ -77,6 +77,7 @@ public class CSystem : MonoBehaviour
 
     void Update()
     {
+        // 최적화해야함.
         if (_room.NeedExtinguish() || _room.NeedRepair())
         {
             _interior.ChangeState(CInterior.EInterState.Disabled);

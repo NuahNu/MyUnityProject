@@ -241,42 +241,49 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
             //NotifyDir();
 
             // 공격 대상 판별. 함수로 뺀다. - 방의 상태를 검사하는 함수라고 생각하면 될듯?
-            if (_currentTargetRoom.CheckEnemy(this.gameObject, out GameObject target))// 공격 대상이 있으면...
+            if (gameObject.tag == _currentTargetRoom.tag)
             {
-                // 대상 지정해줘야함.
-                newDir = (target.transform.position - this.transform.position);
-                Vector2 dir = newDir.normalized;
-                if (_relativeCoordinates != dir)
+                if (_currentTargetRoom.CheckEnemy(this.gameObject, out GameObject target))// 공격 대상이 있으면...
                 {
-                    _relativeCoordinates = dir;
-                    NotifyBattle();
-                    //Debug.Log($"_relativeCoordinates = x : {dir.x}  |  y : {dir.y}");
-                }
+                    // 대상 지정해줘야함.
+                    newDir = (target.transform.position - this.transform.position);
+                    Vector2 dir = newDir.normalized;
+                    if (_relativeCoordinates != dir)
+                    {
+                        _relativeCoordinates = dir;
+                        NotifyBattle();
+                        //Debug.Log($"_relativeCoordinates = x : {dir.x}  |  y : {dir.y}");
+                    }
 
-                // 근거리 공격 -- 타일 한 칸(0.35 ) 안에 있으면 근거리임. 약간의 오차는 필요할듯
-                if (newDir.magnitude < _attackDistance)
-                {
-                    ChangeState(EPeopleState.Attack);
+                    // 근거리 공격 -- 타일 한 칸(0.35 ) 안에 있으면 근거리임. 약간의 오차는 필요할듯
+                    if (newDir.magnitude < _attackDistance)
+                    {
+                        ChangeState(EPeopleState.Attack);
+                    }
+                    // 원거리 공격
+                    else
+                    {
+                        ChangeState(EPeopleState.Shot);
+                    }
+
                 }
-                // 원거리 공격
-                else
+                else if (_currentTargetRoom.NeedExtinguish()) // 불끄기...
                 {
-                    ChangeState(EPeopleState.Shot);
+                    ChangeState(EPeopleState.Extinguish);
                 }
+                else if (_currentTargetRoom.NeedRepair())// 수리
+                {
+                    ChangeState(EPeopleState.Repair);
+                }
+                else if (_currentTargetRoom.IsExistSystem) // 시스템 작업
+                {
+                    ChangeState(EPeopleState.Work);
+                }// else {   } // idle
+            }
+            else
+            {
 
             }
-            else if (_currentTargetRoom.NeedExtinguish()) // 불끄기...
-            {
-                ChangeState(EPeopleState.Extinguish);
-            }
-            else if (_currentTargetRoom.NeedRepair())// 수리
-            {
-                ChangeState(EPeopleState.Repair);
-            }
-            else if (_currentTargetRoom.IsExistSystem) // 시스템 작업
-            {
-                ChangeState(EPeopleState.Work);
-            }// else {   } // idle
         }
     }
 
