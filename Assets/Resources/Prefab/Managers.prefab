@@ -1,257 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6296673233578640276
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806626170725035442}
-  - component: {fileID: 7993313138224343896}
-  m_Layer: 0
-  m_Name: room_oxygen_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1806626170725035442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6296673233578640276}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.138762, y: -0.08292714, z: -0.04165721}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 812255803285424780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7993313138224343896
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6296673233578640276}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16770c089b48c5f469096a30e7947426, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.35, y: 0.7}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &6538338337776200521
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8538490941314246120}
-  - component: {fileID: 1057518970932007129}
-  m_Layer: 0
-  m_Name: room_oxygen_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8538490941314246120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6538338337776200521}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.022, y: -0.46486732, z: -0.04165721}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 812255803285424780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1057518970932007129
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6538338337776200521}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f46b531da36f21945acd6a1b23881837, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.7, y: 0.35}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &8679948291736110174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4218961454757530238}
-  - component: {fileID: 6715799428063601267}
-  m_Layer: 0
-  m_Name: room_oxygen_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4218961454757530238
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679948291736110174}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.664, y: -0.083, z: -0.04165721}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 812255803285424780}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6715799428063601267
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679948291736110174}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16770c089b48c5f469096a30e7947426, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.35, y: 0.7}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &9081979574266302244
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,13 +26,10 @@ Transform:
   m_GameObject: {fileID: 9081979574266302244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.0487247, y: -0.023787828, z: 0.04165721}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8538490941314246120}
-  - {fileID: 1806626170725035442}
-  - {fileID: 4218961454757530238}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5677749090983103077
@@ -306,7 +51,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: afc63713f162e6945b17c24e6649c03b, type: 3}
     - {fileID: 21300000, guid: d3ec4f9a71329d34fb6c54ab2fe78fe0, type: 3}
     - {fileID: 21300000, guid: 928fa64c8e364874c90d164d1eef08a5, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 120
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: 883ea4fba98a215449e4d3054852d751, type: 3}
@@ -315,7 +60,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a7e2753cfb5099a4aa55b3e3cb7b4f62, type: 3}
     - {fileID: 21300000, guid: ba8a0ac3f685a494ab0630ea2f789f42, type: 3}
     - {fileID: 21300000, guid: 3f32821d6a8d28d4184c73efd788d827, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 135
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: 5a9a045863d42a54ea3646d5cf4e85ba, type: 3}
@@ -324,7 +69,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 311d8c1c4b443964eaeb5c4639c2babc, type: 3}
     - {fileID: 21300000, guid: 0199df29c6f09fd4c87f6cebb642a72f, type: 3}
     - {fileID: 21300000, guid: 03e3b540708746645859f811a48a8219, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 135
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: bf8166eacff49294f97b9bf756c8f863, type: 3}
@@ -333,7 +78,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: b7510cebf88f0ed4ebc82ef9c9638f14, type: 3}
     - {fileID: 21300000, guid: 99a17899e509a934ead4dadb5fdd0dfd, type: 3}
     - {fileID: 21300000, guid: 73a4e8a3961a3364e97b22222ad9555a, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 67
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: b4c00fc3415859c42924e603197fb162, type: 3}
@@ -342,7 +87,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1fd3e372b3bbda84588ae1f0f9a84a24, type: 3}
     - {fileID: 21300000, guid: 111ff00bd793c42498818f27e4578e87, type: 3}
     - {fileID: 21300000, guid: bd172f044d1d4dd4aabfadafdd599e86, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 177
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: e2bb89ab679c04043bc9d873a755db1a, type: 3}
@@ -351,7 +96,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4118b4c2fdfee7944a0cdb2fa5d83b91, type: 3}
     - {fileID: 21300000, guid: 3ec618e87179a35409a3ea9985daface, type: 3}
     - {fileID: 21300000, guid: 99d3c49998be2e943bdf9b553d1c0013, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 113
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: 34580c492ee823d4c8b8784519a3d6da, type: 3}
@@ -360,7 +105,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ac76d983248ee6340a88de3f45152b2b, type: 3}
     - {fileID: 21300000, guid: 0757897c173d1cb4c86bfab306a80590, type: 3}
     - {fileID: 21300000, guid: c9bb62da0d1a07d4199c7fb0c3343db2, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 54
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: 12d4cb0eb28498e429afc7b8d3b7a35d, type: 3}
@@ -369,7 +114,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 26be0d3c3d9d80d4091f8492b68c0794, type: 3}
     - {fileID: 21300000, guid: c75c7bb8e45eea542b0f2c5b6424eee2, type: 3}
     - {fileID: 21300000, guid: beaa9b1ee23679b4ead63930f0e85968, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 77
     systemType: 0
   - mainSprite: {fileID: 21300000, guid: b2c887aea4d81d941a4728c3be33f1c0, type: 3}
@@ -378,7 +123,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f0d4e1269b18aa9478078e544dc445e6, type: 3}
     - {fileID: 21300000, guid: e05ea770cf98ff64eae5d6984ce37c12, type: 3}
     - {fileID: 21300000, guid: 262a9949286653a4c9b72f859aa45848, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 138
     systemType: 0
   _enginesData:
@@ -388,7 +133,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d4679790f0c095c4a84d11dceac1ef73, type: 3}
     - {fileID: 21300000, guid: 80a079afa9a9c8e4a97ca7d670c78a75, type: 3}
     - {fileID: 21300000, guid: 53be3f5f9ba97bf4d84b3a63689380a2, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 29
     systemType: 1
   - mainSprite: {fileID: 21300000, guid: 5be39b4b165b87f46a8d590c929b71af, type: 3}
@@ -397,7 +142,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a043ed95d769b4b47a38be585108430b, type: 3}
     - {fileID: 21300000, guid: d46b63cd01067b249abca76122e5e0d1, type: 3}
     - {fileID: 21300000, guid: 1e4b14ac544c95e448c2fbb08751f022, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 209
     systemType: 1
   - mainSprite: {fileID: 21300000, guid: f423e5be532324e4e873f8b14127a6db, type: 3}
@@ -406,7 +151,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d3554b7b213308c47a989f8512b60d31, type: 3}
     - {fileID: 21300000, guid: 8c61b1b588aba37419304dbfeeb09e9b, type: 3}
     - {fileID: 21300000, guid: 0d879843a911f5245b6425ac80c99983, type: 3}
-    size: 2
+    type: 1
     equipmentPosition: 204
     systemType: 1
   - mainSprite: {fileID: 21300000, guid: a941cdd2fd2592a4dad82b04f016c154, type: 3}
@@ -415,7 +160,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: cdb22d73f0195e047ac7a239fef43b0b, type: 3}
     - {fileID: 21300000, guid: 737d493003884df4090eeb17d1697ccb, type: 3}
     - {fileID: 21300000, guid: 46ab44fa8bde4a1498e712e1a63bed42, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 150
     systemType: 1
   - mainSprite: {fileID: 21300000, guid: 14f3555f896e94b46b6e7874382a75ec, type: 3}
@@ -424,39 +169,75 @@ MonoBehaviour:
     - {fileID: 21300000, guid: b782771a0c37add4bafdbd798896fa8c, type: 3}
     - {fileID: 21300000, guid: 7f17d73bc0bc8474ca4d651f806a00e1, type: 3}
     - {fileID: 21300000, guid: cfc5ac9d72e30f04fa0a95beb38b6580, type: 3}
-    size: 2
+    type: 1
     equipmentPosition: 195
     systemType: 1
   _oxygenData:
   - mainSprite: {fileID: 21300000, guid: 47a0ee3d35e4ee042a640085025ba6ef, type: 3}
     isUseGlow: 0
     glowSprites: []
-    size: 2
+    type: 1
     equipmentPosition: 195
     systemType: 2
   - mainSprite: {fileID: 21300000, guid: 25fef511c1dc2254ebdc163450385978, type: 3}
     isUseGlow: 0
     glowSprites: []
-    size: 2
+    type: 1
     equipmentPosition: 3
     systemType: 2
   - mainSprite: {fileID: 21300000, guid: 93091e23b8bef424d87adce99ca99692, type: 3}
     isUseGlow: 0
     glowSprites: []
-    size: 4
+    type: 0
     equipmentPosition: 240
     systemType: 2
   - mainSprite: {fileID: 21300000, guid: 16770c089b48c5f469096a30e7947426, type: 3}
     isUseGlow: 0
     glowSprites: []
-    size: 2
-    equipmentPosition: 240
+    type: 1
+    equipmentPosition: 123
     systemType: 2
-  - mainSprite: {fileID: 21300000, guid: 16770c089b48c5f469096a30e7947426, type: 3}
+  - mainSprite: {fileID: 21300000, guid: f46b531da36f21945acd6a1b23881837, type: 3}
     isUseGlow: 0
     glowSprites: []
-    size: 2
+    type: 1
     equipmentPosition: 240
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: f872fd1c2be1c954eb4f5bd6b5b5dda2, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 12
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: 9023fd5b3057c0d4399c48be54e24006, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 240
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: e7b9112e4b6e2cc40afcbe56587c1541, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 116
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: 488b599228d79ec4bbc98b64ef311657, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 226
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: e0472690c1debe34f8350847afabaf27, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 12
+    systemType: 2
+  - mainSprite: {fileID: 21300000, guid: 694c0968c75612a40bae665b75aee95f, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 15
     systemType: 2
   _weaponsData:
   - mainSprite: {fileID: 21300000, guid: cf6eb07496a67a5468f053ffd86f5cc6, type: 3}
@@ -465,7 +246,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 90c93e3041a99b64bb523b6e88b80d3c, type: 3}
     - {fileID: 21300000, guid: 2b3b3f7685c8af843bb159a61241aa37, type: 3}
     - {fileID: 21300000, guid: 88a220cdba6868f4db3ee9be85c032f2, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 226
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: 03c934efc2f38cf40ad5c40e0956b402, type: 3}
@@ -474,7 +255,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 9746364c115590f4a8b92f8ad2c32775, type: 3}
     - {fileID: 21300000, guid: c1c51829f815ebe48ad283915d5b8e14, type: 3}
     - {fileID: 21300000, guid: 78ef997bd9583174286f02a70cc1d3bf, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 99
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: d2b9ec6d4c041cb4f92d5743d32ce4b9, type: 3}
@@ -483,7 +264,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8afdc2c1659db404e96d9211e47c4453, type: 3}
     - {fileID: 21300000, guid: 2db821acafb1cb844a38d77a3372d530, type: 3}
     - {fileID: 21300000, guid: f79191fd09804b04285d4bba13acf80e, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 195
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: 2bc53e65b62d280469847bc6a700ca55, type: 3}
@@ -492,7 +273,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 18fa2b76a5fb0cd48b6b6df50e635778, type: 3}
     - {fileID: 21300000, guid: 0936c08730069a54ca41bc709429d3c7, type: 3}
     - {fileID: 21300000, guid: 46256ae71f8d2a5449de2435af593790, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 120
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: 7bb48aec08479ff4aabb5a767d668ff3, type: 3}
@@ -501,7 +282,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6372e4f4f2d20514b9753ef2e53adc49, type: 3}
     - {fileID: 21300000, guid: 41ab652e76a31894ea15d963cd6b6dda, type: 3}
     - {fileID: 21300000, guid: 8e565f6314622a242bde995eaf7ce989, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 228
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: b46d9aa1ae55aa54abc5d5145d3dbc02, type: 3}
@@ -510,7 +291,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f7fb40252be09244cb7c7b3ee3d680e9, type: 3}
     - {fileID: 21300000, guid: dab9d2077f7af5c4ab90a993b3e36466, type: 3}
     - {fileID: 21300000, guid: 7726923552313194188ecd7b682da970, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 83
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: f85b53749d06977419e64a015bf8e6fe, type: 3}
@@ -519,7 +300,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6d883c15af5c5234a954937adf5872a0, type: 3}
     - {fileID: 21300000, guid: b78b12057f1b2724681698c84e409334, type: 3}
     - {fileID: 21300000, guid: 70f10b2120aa4a246bdc853faeb8eb8e, type: 3}
-    size: 4
+    type: 0
     equipmentPosition: 75
     systemType: 3
   - mainSprite: {fileID: 21300000, guid: 2edf8afe44e313d488031ab4588e5e7d, type: 3}
@@ -528,7 +309,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8ea6ad49d50564844822475b169f94f7, type: 3}
     - {fileID: 21300000, guid: 77bcc6ca4eb5937448fd37097ffacdcc, type: 3}
     - {fileID: 21300000, guid: b245876ae9871e84ea7d85437cbb5310, type: 3}
-    size: 2
+    type: 1
     equipmentPosition: 3
     systemType: 3
   _dronesData: []
