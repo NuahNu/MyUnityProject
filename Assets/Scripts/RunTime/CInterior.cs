@@ -23,8 +23,8 @@ public class CInterior : MonoBehaviour
     }
 
     #region 인스펙터
-    [Header("데이터 에셋")]
-    [SerializeField] private CInteriorDataAsset _data;
+    [Header("프리셋")]
+    [SerializeField] private CInteriorPreset _preset;
 
     [Header("글로우 오프셋")]
     [SerializeField] private float _glow_z_offset = -0.01f;
@@ -55,25 +55,25 @@ public class CInterior : MonoBehaviour
     private EInterState _currentState = EInterState.Offline;
     #endregion
 
-    public CInteriorDataAsset DataAsset { get { return _data; } set { _data = value; } }
+    public CInteriorPreset Preset { get { return _preset; } set { _preset = value; } }
 
     private void InitData()
     {
-        if (_data != null)
+        if (_preset != null)
         {
-            _mainSpriteRenderer.sprite = _data.preset.mainSprite;
-            _glowSpriteRenderer.sprite = _data.preset.glowSprites[0];
+            _mainSpriteRenderer.sprite = _preset.mainSprite;
+            _glowSpriteRenderer.sprite = _preset.glowSprites[0];
 
-            _mainSprite = _data.preset.mainSprite;
+            _mainSprite = _preset.mainSprite;
 
-            _isUseGlow = _data.preset.isUseGlow;
-            _glowSprites = _data.preset.glowSprites;
+            _isUseGlow = _preset.isUseGlow;
+            _glowSprites = _preset.glowSprites;
 
-            _size = _data.preset._size;
+            _size = _preset._size;
 
-            _equipmentPosition = _data.preset.equipmentPosition;
+            _equipmentPosition = _preset.equipmentPosition;
 
-            _systemType = _data.preset.systemType;
+            _systemType = _preset.systemType;
         }
     }
 
