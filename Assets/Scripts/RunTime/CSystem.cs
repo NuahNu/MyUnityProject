@@ -72,12 +72,23 @@ public class CSystem : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+        if (_room.NeedExtinguish() || _room.NeedRepair())
+        {
+            _interior.ChangeState(CInterior.EInterState.Disabled);
+        }
+        else if (0 < (gameObject.tag == "Ally" ? _room.AllyCount : _room.EnemyCount))
+        {
+            _interior.ChangeState(CInterior.EInterState.Online);
+        }
+        else
+        {
+            _interior.ChangeState(CInterior.EInterState.Offline);
+        }
     }
 
     internal void Init(CRoom cRoom, CInteriorPreset seleted)

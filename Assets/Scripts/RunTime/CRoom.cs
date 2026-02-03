@@ -41,6 +41,9 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     public bool IsExistSystem { get { return _system != null; } }
     public int SizeOfRoom { get { return _sizeOfRoom; } }
 
+    public int AllyCount { get { return _allys.Count; } }
+    public int EnemyCount {  get { return _enemys.Count; } }
+
     void Awake()
     {
 
