@@ -12,7 +12,7 @@ public enum EEquipmentPosition
     LeftUp = 1 << 6,
     LeftDown = 1 << 7,
     Up = UpLeft | UpRight,
-    Rigth = RightUp | RightDown,
+    Right = RightUp | RightDown,
     Down = DownLeft | DownRight,
     Left = LeftUp | LeftDown
 }
@@ -29,7 +29,7 @@ public enum EDoorPosition
     LeftUp = 1 << 6,
     LeftDown = 1 << 7,
     Up = UpLeft | UpRight,
-    Rigth = RightUp | RightDown,
+    Right = RightUp | RightDown,
     Down = DownLeft | DownRight,
     Left = LeftUp | LeftDown
 
