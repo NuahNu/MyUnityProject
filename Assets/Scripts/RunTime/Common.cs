@@ -35,6 +35,13 @@ public enum EDoorPosition
 
 }
 
+public enum ERoomType
+{
+    O_2_2,  // 4Ä­ ³×¸ð
+    I_2_1,  // °¡·Î·Î ±ä 2Ä­
+    I_1_2   // ¼¼·Î·Î ±ä 2Ä­
+}
+
 public static class Common
 {
     public static float z_offset = -0.01f;

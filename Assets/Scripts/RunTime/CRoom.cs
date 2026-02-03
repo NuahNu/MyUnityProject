@@ -17,8 +17,8 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 {
 
     #region 인스펙터
-    [Header("크기")]
-    [SerializeField] private int _sizeOfRoom;
+    [Header("타입")]
+    [SerializeField] private ERoomType _type;
 
     [Header("문의 위치")]
     [SerializeField] private EDoorPosition _doorPosition;
@@ -39,10 +39,17 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     #endregion
 
     public bool IsExistSystem { get { return _system != null; } }
-    public int SizeOfRoom { get { return _sizeOfRoom; } }
+    public ERoomType RoomType { get { return _type; } }
 
     public int AllyCount { get { return _allys.Count; } }
     public int EnemyCount {  get { return _enemys.Count; } }
+
+    public int RoomSize => _type switch {
+        ERoomType.O_2_2 => 4,
+        ERoomType.I_2_1 => 2,
+        ERoomType.I_1_2 => 2,
+        _ => 0
+        };
 
     void Awake()
     {
@@ -65,7 +72,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         {
             if (!_allys.Contains(people))
             {
-                if (_allys.Count < _sizeOfRoom)
+                if (_allys.Count < RoomSize)
                 {
                     _allys.Add(people);
                     return true;
@@ -84,7 +91,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         {
             if (!_enemys.Contains(people))
             {
-                if (_enemys.Count < _sizeOfRoom)
+                if (_enemys.Count < RoomSize)
                 {
                     _enemys.Add(people);
                     return true;
@@ -175,10 +182,10 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
         for (int i = 0; i < array.Length; i++)
         {
-            Debug.Log($"{_sizeOfRoom} : {array[i].size}");
+            Debug.Log($"{_type} : {array[i].type}");
             Debug.Log($"{_doorPosition} : {array[i].equipmentPosition}");
 
-            if (_sizeOfRoom != array[i].size)   // 방과 시설의 크기가 같고
+            if (_type != array[i].type)   // 방과 시설의 크기가 같고
                 continue;
             if (((int)_doorPosition & (int)array[i].equipmentPosition) == 0) // 문과 장비의 위치가 겹치지 않으면 
                 continue;

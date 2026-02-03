@@ -39,7 +39,7 @@ public class CInterior : MonoBehaviour
     // 2 - 작동 불가능
 
     [Header("사이즈 (방처럼 2, 4만 존재)")]
-    [SerializeField] private int _size;
+    [SerializeField] private ERoomType _type;
 
     [Header("장비 위치")]
     [SerializeField] private EEquipmentPosition _equipmentPosition;
@@ -66,7 +66,7 @@ public class CInterior : MonoBehaviour
             _isUseGlow = _preset.isUseGlow;
             _glowSprites = _preset.glowSprites;
 
-            _size = _preset.size;
+            _type = _preset.type;
 
             _equipmentPosition = _preset.equipmentPosition;
 
@@ -140,10 +140,11 @@ public class CInterior : MonoBehaviour
                 Debug.LogWarning($"At {gameObject.name} : _glowSprites == null || _glowSprites.Length < 3");
         }
 
-        if (_size != 2 && _size != 4)
-        {
-            Debug.LogWarning($"At {gameObject.name} : 방의 크기는 무조건 2 아니면 4이여야 합니다. 일단은");
-        }
+        // 적절한 방어코드 추가.
+        //if (_type != 2 && _type != 4)
+        //{
+        //    Debug.LogWarning($"At {gameObject.name} : 방의 크기는 무조건 2 아니면 4이여야 합니다. 일단은");
+        //}
 
     }
 

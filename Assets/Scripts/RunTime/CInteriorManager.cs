@@ -21,8 +21,8 @@ public class CInteriorPreset
     // 1 - 자리에 있
     // 2 - 작동 불가능
 
-    [Header("사이즈 (방처럼 2, 4만 존재)")]
-    public int size;
+    [Header("방 종류")]
+    public ERoomType type;
 
     [Header("장비 위치")]
     public EEquipmentPosition equipmentPosition;
