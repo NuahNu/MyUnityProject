@@ -3,6 +3,11 @@ using UnityEngine;
 
 #region CInterior
 /*
+1. 데이터 에셋을 설정하고
+    public CInteriorDataAsset DataAsset { get { return _data; } set { _data = value; } }
+    
+2. 초기화를 해주면 된다.
+        InitAll();
 
 */
 #endregion
@@ -20,6 +25,9 @@ public class CInterior : MonoBehaviour
     #region 인스펙터
     [Header("데이터 에셋")]
     [SerializeField] private CInteriorDataAsset _data;
+
+    [Header("글로우 오프셋")]
+    [SerializeField] private float _glow_z_offset = -0.01f;
 
     [Header("메인 이미지")]
     [SerializeField] private SpriteRenderer _mainSpriteRenderer;
@@ -47,49 +55,12 @@ public class CInterior : MonoBehaviour
     private EInterState _currentState = EInterState.Offline;
     #endregion
 
-    void OnValidate()
+    public CInteriorDataAsset DataAsset { get { return _data; } set { _data = value; } }
+
+    private void InitData()
     {
-        if(_data != null)
+        if (_data != null)
         {
-            if (_mainSpriteRenderer == null)
-            {
-                if(!TryGetComponent(out _mainSpriteRenderer))
-                {
-                    this.gameObject.AddComponent<SpriteRenderer>();
-                }
-                if(!TryGetComponent(out _mainSpriteRenderer))
-                {
-                    Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
-                    return;
-                }
-            }
-
-            if (_glowSpriteRenderer == null)
-            {
-                Transform glowT =  transform.Find("glow");
-                GameObject glowGO;
-
-                if (glowT != null)
-                {
-                    glowGO = glowT.gameObject;
-                }
-                else
-                {
-                    glowGO = new GameObject("glow");
-                    glowGO.transform.parent = this.transform;
-                }
-
-                if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
-                {
-                    glowGO.AddComponent<SpriteRenderer>();
-                }
-                if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
-                {
-                    Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
-                    return;
-                }
-            }
-
             _mainSpriteRenderer.sprite = _data.preset.mainSprite;
             _glowSpriteRenderer.sprite = _data.preset.glowSprites[0];
 
@@ -106,8 +77,59 @@ public class CInterior : MonoBehaviour
         }
     }
 
+    private void InitObjects()
+    {
+        if (_mainSpriteRenderer == null)
+        {
+            if (!TryGetComponent(out _mainSpriteRenderer))
+            {
+                this.gameObject.AddComponent<SpriteRenderer>();
+            }
+            if (!TryGetComponent(out _mainSpriteRenderer))
+            {
+                Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
+                return;
+            }
+        }
+
+        if (_glowSpriteRenderer == null)
+        {
+            Transform glowT = transform.Find("glow");
+            GameObject glowGO;
+
+            if (glowT != null)
+            {
+                glowGO = glowT.gameObject;
+            }
+            else
+            {
+                glowGO = new GameObject("glow");
+                glowGO.transform.parent = this.transform;
+            }
+            glowGO.transform.localPosition = new Vector3(0, 0, _glow_z_offset);
+
+            if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
+            {
+                glowGO.AddComponent<SpriteRenderer>();
+            }
+            if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
+            {
+                Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
+                return;
+            }
+        }
+    }
+
+    public void InitAll()
+    {
+        InitData();
+        InitObjects();
+    }
+
     void Awake()
     {
+        InitAll();
+
         if (_mainSpriteRenderer == null)
             Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
         if (_mainSprite == null)
