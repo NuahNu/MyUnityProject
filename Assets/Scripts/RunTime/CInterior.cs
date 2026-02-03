@@ -24,10 +24,7 @@ public class CInterior : MonoBehaviour
 
     #region 인스펙터
     [Header("프리셋")]
-    [SerializeField] private CInteriorPreset _preset;
-
-    [Header("글로우 오프셋")]
-    [SerializeField] private float _glow_z_offset = -0.01f;
+    [SerializeField] private CInteriorPreset _preset = null;
 
     [Header("메인 이미지")]
     [SerializeField] private SpriteRenderer _mainSpriteRenderer;
@@ -55,7 +52,7 @@ public class CInterior : MonoBehaviour
     private EInterState _currentState = EInterState.Offline;
     #endregion
 
-    public CInteriorPreset Preset { get { return _preset; } set { _preset = value; } }
+    public CInteriorPreset Preset { get { return _preset; } set { _preset = value; InitData(); } }
 
     private void InitData()
     {
@@ -69,7 +66,7 @@ public class CInterior : MonoBehaviour
             _isUseGlow = _preset.isUseGlow;
             _glowSprites = _preset.glowSprites;
 
-            _size = _preset._size;
+            _size = _preset.size;
 
             _equipmentPosition = _preset.equipmentPosition;
 
@@ -106,7 +103,7 @@ public class CInterior : MonoBehaviour
                 glowGO = new GameObject("glow");
                 glowGO.transform.parent = this.transform;
             }
-            glowGO.transform.localPosition = new Vector3(0, 0, _glow_z_offset);
+            glowGO.transform.localPosition = new Vector3(0, 0, Common.z_offset);
 
             if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
             {
@@ -122,8 +119,8 @@ public class CInterior : MonoBehaviour
 
     public void InitAll()
     {
-        InitData();
         InitObjects();
+        InitData();
     }
 
     void Awake()

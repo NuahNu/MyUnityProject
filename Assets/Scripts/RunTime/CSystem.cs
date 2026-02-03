@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 
@@ -81,15 +80,17 @@ public class CSystem : MonoBehaviour
         
     }
 
-    internal void Init(CRoom cRoom, ESystemType type)
+    internal void Init(CRoom cRoom, CInteriorPreset seleted)
     {
         // 방 연결
         _room = cRoom;
 
-        // 타입별 프리팹 체크 후 설치
-        //cRoom.SizeOfRoom;
-        //type; // 이 타입이 가능한 사이즈 등
+        GameObject interiorGO = new GameObject("Interior");
+        interiorGO.transform.parent = this.transform;
+        interiorGO.transform.localPosition = new Vector3(0, 0, Common.z_offset);
+        interiorGO.tag = this.gameObject.tag;
 
-        //  인테리어를 고르라는 뜻
+        _interior = interiorGO.AddComponent<CInterior>();
+        _interior.Preset = seleted;
     }
 }

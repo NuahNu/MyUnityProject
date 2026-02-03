@@ -15,7 +15,7 @@ using UnityEngine.EventSystems;
 
 public class CRoom : MonoBehaviour, IPointerDownHandler
 {
-    
+
     #region 인스펙터
     [Header("크기")]
     [SerializeField] private int _sizeOfRoom;
@@ -38,8 +38,8 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
     #endregion
 
-    public bool IsExistSystem {  get { return _system != null; } }
-    public int SizeOfRoom {  get { return _sizeOfRoom; } }
+    public bool IsExistSystem { get { return _system != null; } }
+    public int SizeOfRoom { get { return _sizeOfRoom; } }
 
     void Awake()
     {
@@ -62,7 +62,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
         {
             if (!_allys.Contains(people))
             {
-                if(_allys.Count <  _sizeOfRoom)
+                if (_allys.Count < _sizeOfRoom)
                 {
                     _allys.Add(people);
                     return true;
@@ -163,13 +163,32 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     }
 
 
-    internal bool Install(CSystem.ESystemType type)
+    public bool Install(CSystem.ESystemType type)
     {
-        CSystem newSystem = this.gameObject.AddComponent<CSystem>();
+        // 설치 가능 조건 확인
+        CInteriorPreset[] array = CInteriorManager.Instance.DataDic[type];
 
-        newSystem.Init(this, type);
+        CInteriorPreset seleted = null;
 
-        _system = newSystem;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Debug.Log($"{_sizeOfRoom} : {array[i].size}");
+            Debug.Log($"{_doorPosition} : {array[i].equipmentPosition}");
+
+            if (_sizeOfRoom != array[i].size)   // 방과 시설의 크기가 같고
+                continue;
+            if (((int)_doorPosition & (int)array[i].equipmentPosition) == 0) // 문과 장비의 위치가 겹치지 않으면 
+                continue;
+
+            seleted = array[i];
+            break;
+        }
+        if (seleted == null)
+            return false;
+
+        _system = this.gameObject.AddComponent<CSystem>();
+
+        _system.Init(this, seleted);
 
         return _system.IsExistInterior;
     }

@@ -22,7 +22,7 @@ public class CInteriorPreset
     // 2 - 작동 불가능
 
     [Header("사이즈 (방처럼 2, 4만 존재)")]
-    public int _size;
+    public int size;
 
     [Header("장비 위치")]
     public EEquipmentPosition equipmentPosition;
@@ -33,9 +33,6 @@ public class CInteriorPreset
 public class CInteriorManager : MonoBehaviour
 {
     #region 인스펙터
-    [Header("미리 다 올리기")]
-    [SerializeField] private bool _preLoad = true;
-
     [Header("Shields")]
     [SerializeField] private CInteriorPreset[] _shieldsData;
     [Header("Engines")]

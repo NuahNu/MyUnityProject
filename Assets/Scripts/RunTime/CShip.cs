@@ -62,6 +62,7 @@ public class CShip : MonoBehaviour
         {
             childrentransform.gameObject.tag = this.gameObject.tag;
         }
+        AddSystem(CSystem.ESystemType.Weapons);
     }
 
     void Start()
@@ -83,7 +84,7 @@ public class CShip : MonoBehaviour
         for (int i = 0; i < _rooms.Length; i++)
         {
             // 돌면서 빈방에 설치
-            if (_rooms[i].IsExistSystem)
+            if (!_rooms[i].IsExistSystem)
             {
                 success = _rooms[i].Install(type);
             }
@@ -92,10 +93,12 @@ public class CShip : MonoBehaviour
         if (success)
         {
             // 설치 성공
+            Debug.Log("아마도 설치 성공");
         }
         else
         {
             // 설치 실패
+            Debug.Log("아마도 설치 실패");
         }
 
         // 성공시 대충 다 연결

@@ -34,3 +34,8 @@ public enum EDoorPosition
     Left = LeftUp | LeftDown
 
 }
+
+public static class Common
+{
+    public static float z_offset = -0.01f;
+}
