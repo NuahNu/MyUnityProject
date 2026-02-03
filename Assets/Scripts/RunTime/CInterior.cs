@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 
@@ -18,9 +17,10 @@ public class CInterior : MonoBehaviour
         Count
     }
 
-    
-
     #region 인스펙터
+    [Header("데이터 에셋")]
+    [SerializeField] private CInteriorDataAsset _data;
+
     [Header("메인 이미지")]
     [SerializeField] private SpriteRenderer _mainSpriteRenderer;
     [SerializeField] private Sprite _mainSprite;
@@ -46,6 +46,65 @@ public class CInterior : MonoBehaviour
     #region 내부 변수
     private EInterState _currentState = EInterState.Offline;
     #endregion
+
+    void OnValidate()
+    {
+        if(_data != null)
+        {
+            if (_mainSpriteRenderer == null)
+            {
+                if(!TryGetComponent(out _mainSpriteRenderer))
+                {
+                    this.gameObject.AddComponent<SpriteRenderer>();
+                }
+                if(!TryGetComponent(out _mainSpriteRenderer))
+                {
+                    Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
+                    return;
+                }
+            }
+
+            if (_glowSpriteRenderer == null)
+            {
+                Transform glowT =  transform.Find("glow");
+                GameObject glowGO;
+
+                if (glowT != null)
+                {
+                    glowGO = glowT.gameObject;
+                }
+                else
+                {
+                    glowGO = new GameObject("glow");
+                    glowGO.transform.parent = this.transform;
+                }
+
+                if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
+                {
+                    glowGO.AddComponent<SpriteRenderer>();
+                }
+                if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
+                {
+                    Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
+                    return;
+                }
+            }
+
+            _mainSpriteRenderer.sprite = _data.preset.mainSprite;
+            _glowSpriteRenderer.sprite = _data.preset.glowSprites[0];
+
+            _mainSprite = _data.preset.mainSprite;
+
+            _isUseGlow = _data.preset.isUseGlow;
+            _glowSprites = _data.preset.glowSprites;
+
+            _size = _data.preset._size;
+
+            _equipmentPosition = _data.preset.equipmentPosition;
+
+            _systemType = _data.preset.systemType;
+        }
+    }
 
     void Awake()
     {
