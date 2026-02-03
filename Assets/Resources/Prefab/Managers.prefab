@@ -313,8 +313,29 @@ MonoBehaviour:
     equipmentPosition: 3
     systemType: 3
   _dronesData: []
-  _medbayData: []
-  _pilotData: []
-  _doorData: []
+  _medbayData:
+  - mainSprite: {fileID: 21300000, guid: 40445b6d9923c9840995f2b618d9c1bb, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 6
+    systemType: 5
+  _pilotData:
+  - mainSprite: {fileID: 21300000, guid: 3efa5665d3eaed047aa3c41549507d5a, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 1556e6ae57c2e044d88355b55240054e, type: 3}
+    - {fileID: 21300000, guid: df066ce4e7ac39649b1f61f07e9b49a1, type: 3}
+    - {fileID: 21300000, guid: b14f5c1864a263e448726351ae694f9f, type: 3}
+    type: 2
+    equipmentPosition: 63
+    systemType: 6
+  _doorData:
+  - mainSprite: {fileID: 21300000, guid: 4a75275c04bdce443a579b6adf568b76, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 3
+    systemType: 8
   _cloakingData: []
   _teleporterData: []

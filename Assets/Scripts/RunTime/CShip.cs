@@ -35,7 +35,7 @@ public class CShip : MonoBehaviour
     [SerializeField] private CRoom[] _rooms;
 
     [Header("기본 설치 시스템")]
-    [SerializeField] private List<CSystem.ESystemType> _eSystems;
+    [SerializeField] private List<CSystem.ESystemType> _defaultSystems;
     // 컨트롤 도어 센서 메디, 산소, 실드 엔진 무기 등.
     // 추가 순서는 System의 enum 참고
     #endregion
@@ -62,7 +62,15 @@ public class CShip : MonoBehaviour
         {
             childrentransform.gameObject.tag = this.gameObject.tag;
         }
-        AddSystem(CSystem.ESystemType.Weapons);
+        AddDefaultSystem();
+    }
+
+    void AddDefaultSystem()
+    {
+        for (int i = 0; i < _defaultSystems.Count; i++)
+        {
+            AddSystem(_defaultSystems[i]);
+        }
     }
 
     void Start()

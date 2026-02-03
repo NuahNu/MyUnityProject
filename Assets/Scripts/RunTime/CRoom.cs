@@ -182,8 +182,8 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
         for (int i = 0; i < array.Length; i++)
         {
-            Debug.Log($"{_type} : {array[i].type}");
-            Debug.Log($"{_doorPosition} : {array[i].equipmentPosition}");
+            //Debug.Log($"{_type} : {array[i].type}");
+            //Debug.Log($"{_doorPosition} : {array[i].equipmentPosition}");
 
             if (_type != array[i].type)   // 방과 시설의 크기가 같고
                 continue;

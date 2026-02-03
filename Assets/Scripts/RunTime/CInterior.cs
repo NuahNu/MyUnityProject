@@ -58,13 +58,15 @@ public class CInterior : MonoBehaviour
     {
         if (_preset != null)
         {
-            _mainSpriteRenderer.sprite = _preset.mainSprite;
-            _glowSpriteRenderer.sprite = _preset.glowSprites[0];
-
             _mainSprite = _preset.mainSprite;
 
             _isUseGlow = _preset.isUseGlow;
-            _glowSprites = _preset.glowSprites;
+            if (_isUseGlow)
+                _glowSprites = _preset.glowSprites;
+
+            _mainSpriteRenderer.sprite = _preset.mainSprite;
+            if (_isUseGlow)
+                _glowSpriteRenderer.sprite = _preset.glowSprites[0];
 
             _type = _preset.type;
 
