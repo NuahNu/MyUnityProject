@@ -101,12 +101,12 @@ public class CShip : MonoBehaviour
         if (success)
         {
             // 설치 성공
-            Debug.Log("아마도 설치 성공");
+            Debug.Log($"{type} 아마도 설치 성공");
         }
         else
         {
             // 설치 실패
-            Debug.Log("아마도 설치 실패. 인테리어 메니저에 적절한 프리셋이 없거나 빈 방이 없다.");
+            Debug.Log($"{type} 아마도 설치 실패. 인테리어 메니저에 적절한 프리셋이 없거나 빈 방이 없다.");
         }
 
         // 성공시 대충 다 연결
