@@ -49,6 +49,8 @@ public class CInteriorManager : MonoBehaviour
     [SerializeField] private CInteriorPreset[] _pilotData;
     [Header("Door")]
     [SerializeField] private CInteriorPreset[] _doorData;
+    [Header("Sensors")]
+    [SerializeField] private CInteriorPreset[] _sensorsData;
     [Header("Cloaking")]
     [SerializeField] private CInteriorPreset[] _cloakingData;
     [Header("Teleporter")]
@@ -81,6 +83,7 @@ public class CInteriorManager : MonoBehaviour
         _dataDic.Add(CSystem.ESystemType.Medbay, _medbayData);
         _dataDic.Add(CSystem.ESystemType.Pilot, _pilotData);
         _dataDic.Add(CSystem.ESystemType.Door, _doorData);
+        _dataDic.Add(CSystem.ESystemType.Sensors, _sensorsData);
         _dataDic.Add(CSystem.ESystemType.Cloaking, _cloakingData);
         _dataDic.Add(CSystem.ESystemType.Teleporter, _teleporterData);
     }
