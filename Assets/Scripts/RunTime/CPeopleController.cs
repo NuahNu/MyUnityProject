@@ -281,15 +281,47 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                 else
                 {
                     ChangeState(EPeopleState.Idle);
-                } // idle
+                }
             }
             else
             {
                 // 적의 함선에서...
 
                 // 적이 있다면 공격
+                if (_currentTargetRoom.CheckEnemy(this.gameObject, out GameObject target))// 공격 대상이 있으면...
+                {
+                    // 대상 지정해줘야함.
+                    newDir = (target.transform.position - this.transform.position);
+                    Vector2 dir = newDir.normalized;
+                    if (_relativeCoordinates != dir)
+                    {
+                        _relativeCoordinates = dir;
+                        NotifyBattle();
+                        //Debug.Log($"_relativeCoordinates = x : {dir.x}  |  y : {dir.y}");
+                    }
+
+                    // 근거리 공격 -- 타일 한 칸(0.35 ) 안에 있으면 근거리임. 약간의 오차는 필요할듯
+                    if (newDir.magnitude < _attackDistance)
+                    {
+                        ChangeState(EPeopleState.Attack);
+                    }
+                    // 원거리 공격
+                    else
+                    {
+                        ChangeState(EPeopleState.Shot);
+                    }
+
+                }
                 // 시스템의 체력이 남아있다면 공격
+                else if (false)
+                {
+
+                }
                 // 아니면 아이들.
+                else
+                {
+                    ChangeState(EPeopleState.Idle);
+                }
             }
         }
     }

@@ -23,12 +23,14 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     [SerializeField] private EDoorPosition _doorPosition;
 
     [Header("들어가있을 예정인 객체들")]
+    [ReadOnly]
     [SerializeField] private List<GameObject> _allys;
+    [ReadOnly]
     [SerializeField] private List<GameObject> _enemys;
     // 지금 당장 들어가 있지 않아도 들어갈 예정이라고 예약한다.
     // 따라서 미리 들어가도록 명령이 되어있다면 다른 녀석들이 못 들어가는게 맞다.
 
-    [Header("설치된 시스템")]
+    [Header("설치된 시스템 스크립트")]
     [ReadOnly]
     [SerializeField] private CSystem _system;
     #endregion
