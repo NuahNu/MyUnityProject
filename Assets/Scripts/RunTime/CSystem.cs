@@ -58,6 +58,8 @@ public class CSystem : MonoBehaviour
     // 레벨
     // 소속된 방.
     private CRoom _room;
+
+    private CIconPreset _iconPreset;
     #endregion
 
     public bool IsExistInterior { get { return _interior != null; } }
@@ -81,19 +83,25 @@ public class CSystem : MonoBehaviour
         // 최적화해야함.
         if (_room.NeedExtinguish() || _room.NeedRepair())
         {
-            _interior.ChangeState(CInterior.EInterState.Disabled);
+            _interior.ChangeState(CInterior.EInterState.Damaged);
         }
-        else if (0 < (gameObject.tag == "Ally" ? _room.AllyCount : _room.EnemyCount))
+        else if (true)  // 말 그대로 전력이 공급중이고, 피해가 없다면
         {
-            _interior.ChangeState(CInterior.EInterState.Online);
+            _interior.ChangeState(CInterior.EInterState.PowerOn);
         }
-        else
+        else    // 최소한의 전력도 없을 경우.
         {
-            _interior.ChangeState(CInterior.EInterState.Offline);
+            _interior.ChangeState(CInterior.EInterState.PowerOff);
         }
+
+        // 이건 따로 다른 변수로 구현한다.
+        //if (0 < (gameObject.tag == "Ally" ? _room.AllyCount : _room.EnemyCount))
+        //{
+        //
+        //}
     }
 
-    internal void Init(CRoom cRoom, CInteriorPreset seleted)
+    internal void Init(CRoom cRoom, CInteriorPreset seleted, CIconPreset iconPreset)
     {
         // 방 연결
         _room = cRoom;
@@ -105,5 +113,9 @@ public class CSystem : MonoBehaviour
 
         _interior = interiorGO.AddComponent<CInterior>();
         _interior.Preset = seleted;
+
+        _iconPreset = iconPreset;
+
+        _interior.OverlayIcon = _iconPreset.overlaySprite;
     }
 }

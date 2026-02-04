@@ -201,7 +201,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
         _system = this.gameObject.AddComponent<CSystem>();
 
-        _system.Init(this, seleted);
+        _system.Init(this, seleted, CInteriorManager.Instance.IconDic[type]);
 
         return _system.IsExistInterior;
     }

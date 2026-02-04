@@ -100,16 +100,21 @@ public class CInteriorManager : MonoBehaviour
         _interiorDataDic.Add(CSystem.ESystemType.Sensors, _sensorsData);
         _interiorDataDic.Add(CSystem.ESystemType.Cloaking, _cloakingData);
         _interiorDataDic.Add(CSystem.ESystemType.Teleporter, _teleporterData);
+
+        for (int i = 0; i < _iconPresets.Length; i++)
+        {
+            _iconDic.Add((CSystem.ESystemType)i, _iconPresets[i]);
+        }
     }
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
     void OnDestroy()
     {

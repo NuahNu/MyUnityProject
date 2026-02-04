@@ -16,9 +16,10 @@ public class CInterior : MonoBehaviour
 {
     public enum EInterState
     {
-        Offline,
-        Online,
-        Disabled,
+        PowerOff,
+        PowerOn,
+        Damaged,
+        FatalDamage,
         Count
     }
 
@@ -61,14 +62,15 @@ public class CInterior : MonoBehaviour
     #endregion
 
     #region 내부 변수
-    private EInterState _currentState = EInterState.Offline;
+    private EInterState _currentState = EInterState.PowerOff;
     #endregion
 
-    public CInteriorPreset Preset { get { return _preset; } set { _preset = value; InitData(); } }
+    public CInteriorPreset Preset { get { return _preset; } set { _preset = value; InitPreset(); } }
+    public Sprite OverlayIcon { get { return _overlaySprite; } set { _overlaySprite = value; InitIcon(); } }
 
     public bool IsUseGlow { get { return _isUseGlow; } }
 
-    private void InitData()
+    private void InitPreset()
     {
         if (_preset != null)
         {
@@ -90,7 +92,7 @@ public class CInterior : MonoBehaviour
         }
     }
 
-    private void InitObjects()
+    private void InitRenderers()
     {
         if (_mainSpriteRenderer == null)
         {
@@ -127,21 +129,65 @@ public class CInterior : MonoBehaviour
             }
             if (!glowGO.TryGetComponent(out _glowSpriteRenderer))
             {
-                Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
+                Debug.LogWarning($"At {gameObject.name} : _glowSpriteRenderer == null");
+                return;
+            }
+        }
+
+        if (_overlayRenderer == null)
+        {
+            Transform overlayT = transform.Find("overlay");
+            GameObject overlayGO;
+
+            if (overlayT != null)
+            {
+                overlayGO = overlayT.gameObject;
+            }
+            else
+            {
+                overlayGO = new GameObject("overlay");
+                overlayGO.transform.parent = this.transform;
+            }
+            overlayGO.transform.localPosition = new Vector3(0, 0, Common.z_offset);
+
+            if (!overlayGO.TryGetComponent(out _overlayRenderer))
+            {
+                overlayGO.AddComponent<SpriteRenderer>();
+            }
+            if (!overlayGO.TryGetComponent(out _overlayRenderer))
+            {
+                Debug.LogWarning($"At {gameObject.name} : _overlayRenderer == null");
                 return;
             }
         }
     }
 
+    private void InitIcon()
+    {
+        if (_overlaySprite == null)
+        {
+            Debug.LogWarning($"At {gameObject.name} : _overlaySprite == null");
+        }
+        if (_overlayColors == null || _overlayColors.Length == 0)
+        {
+            _overlayColors = new Color[3];
+            _overlayColors[0] = Color.gray;
+            _overlayColors[1] = new Color(255 / 255, 165 / 255, 0, 1);
+            _overlayColors[2] = Color.red;
+        }
+    }
+
     public void InitAll()
     {
-        InitObjects();
-        InitData();
+        InitRenderers();
+        InitPreset();
+        InitIcon();
     }
 
     void Awake()
     {
-        InitAll();
+        InitRenderers();
+        //InitAll();
 
         if (_mainSpriteRenderer == null)
             Debug.LogWarning($"At {gameObject.name} : _mainSpriteRenderer == null");
@@ -167,20 +213,58 @@ public class CInterior : MonoBehaviour
     void Start()
     {
         _mainSpriteRenderer.sprite = _mainSprite;
+
         if (_isUseGlow == true)
         {
             _glowSpriteRenderer.sprite = _glowSprites[0];
         }
-    }
 
-    public void ChangeState(EInterState state)
+        _overlayRenderer.sprite = _overlaySprite;
+    }
+    private void ChangeGlowSprite()
     {
         if (!_isUseGlow) return; // 점등 효과가 없는 것들도 있더라..
+
+        switch (_currentState)
+        {
+            case EInterState.PowerOff:
+                _glowSpriteRenderer.enabled = false;
+                break;
+            case EInterState.PowerOn:
+            case EInterState.Damaged:
+            case EInterState.FatalDamage:
+                _glowSpriteRenderer.enabled = true;
+                _glowSpriteRenderer.sprite = _glowSprites[0];
+                break;
+        }
+    }
+    private void ChangeOverlayIcon()
+    {
+        if (_overlayRenderer == null) return;
+        if (_overlayColors == null || _overlayColors.Length == 0) return;
+
+        switch (_currentState)
+        {
+            case EInterState.PowerOff:
+            case EInterState.PowerOn:
+                _overlayRenderer.color = _overlayColors[0];
+                break;
+            case EInterState.Damaged:
+                _overlayRenderer.color = _overlayColors[1];
+                break;
+            case EInterState.FatalDamage:
+                _overlayRenderer.color = _overlayColors[2];
+                break;
+        }
+    }
+    public void ChangeState(EInterState state)
+    {
 
         if (_currentState != state)
         {
             _currentState = state;
-            _glowSpriteRenderer.sprite = _glowSprites[(int)_currentState];
         }
+        ChangeGlowSprite();
+        ChangeOverlayIcon();
     }
 }
