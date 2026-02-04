@@ -38,11 +38,13 @@ public class CShip : MonoBehaviour
     [SerializeField] private List<CSystem.ESystemType> _defaultSystems;
     // 컨트롤 도어 센서 메디, 산소, 실드 엔진 무기 등.
     // 추가 순서는 System의 enum 참고
+    // 이거 꼭 List여야 하나?
+
     #endregion
 
     #region 내부 변수
     //private Dictionary<GameObject, string> childObjects; 
-    //
+    private readonly Dictionary<CSystem.ESystemType, CSystem> _installedSystem = new();
     #endregion
 
     private void Reset()
@@ -85,23 +87,32 @@ public class CShip : MonoBehaviour
 
     public bool AddSystem(CSystem.ESystemType type)
     {
+        // 먼저 설치되었느지 확인.
+        if (_installedSystem.ContainsKey(type))
+        {
+            Debug.LogWarning($"{gameObject.name}에 이미 존재하는 시스템을 추가하려고 한다.");
+            return false;
+        }
+
         // 배열을 탐색해 설치 가능한 방이 남았는지 확인
         // floor 라는 .cs를 따로 만들어야 하는가
-        bool success = false;
+        CSystem newSystem = null;
 
         for (int i = 0; i < _rooms.Length; i++)
         {
             // 돌면서 빈방에 설치
             if (!_rooms[i].IsExistSystem)
             {
-                success = _rooms[i].Install(type);
+                newSystem = _rooms[i].Install(type);
             }
-            if (success) break;
+            if (newSystem != null) break;
         }
-        if (success)
+        if (newSystem != null)
         {
             // 설치 성공
             Debug.Log($"{type} 아마도 설치 성공");
+
+            _installedSystem.Add(type, newSystem);
         }
         else
         {

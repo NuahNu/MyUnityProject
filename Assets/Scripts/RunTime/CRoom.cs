@@ -176,7 +176,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     }
 
 
-    public bool Install(CSystem.ESystemType type)
+    public CSystem Install(CSystem.ESystemType type)
     {
         // 설치 가능 조건 확인
         CInteriorPreset[] array = CInteriorManager.Instance.DataDic[type];
@@ -197,12 +197,12 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
             break;
         }
         if (seleted == null)
-            return false;
+            return null;
 
         _system = this.gameObject.AddComponent<CSystem>();
 
         _system.Init(this, seleted, CInteriorManager.Instance.IconDic[type]);
 
-        return _system.IsExistInterior;
+        return _system;
     }
 }
