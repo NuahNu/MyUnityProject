@@ -102,17 +102,17 @@ public class CShip : MonoBehaviour
         {
             // 설치 성공
             Debug.Log($"{type} 아마도 설치 성공");
+
+            // 방에 설치 했으면, 이제 함선에 기능을 추가할 시간이다.
+            // 그냥 시스템이 알아서 하도록 할까?
+
+            return true;
         }
         else
         {
             // 설치 실패
             Debug.Log($"{type} 아마도 설치 실패. 인테리어 메니저에 적절한 프리셋이 없거나 빈 방이 없다.");
+            return false;
         }
-
-        // 성공시 대충 다 연결
-
-        // 성공 여부 반환
-
-        return false;
     }
 }
