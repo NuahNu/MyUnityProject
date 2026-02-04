@@ -24,6 +24,7 @@ public class CInterior : MonoBehaviour
 
     #region 인스펙터
     [Header("프리셋")]
+    [ReadOnly]
     [SerializeField] private CInteriorPreset _preset = null;
 
     [Header("메인 이미지")]
@@ -34,9 +35,20 @@ public class CInterior : MonoBehaviour
     [SerializeField] private bool _isUseGlow = true;
     [SerializeField] private SpriteRenderer _glowSpriteRenderer;
     [SerializeField] private Sprite[] _glowSprites;
-    // 0 - 자리에 없
-    // 1 - 자리에 있
-    // 2 - 작동 불가능
+    // 0 - 파랑 - 작동중
+    // 1 - 초록 - ?
+    // 2 - 노랑 - ???
+
+    [Header("오버레이 아이콘")]
+    [SerializeField] private SpriteRenderer _overlayRenderer;
+    [SerializeField] private Sprite _overlaySprite;
+    [ReadOnly]
+    [SerializeField] private Color[] _overlayColors;
+    // 색을 변경해보자.
+    // 스프라이트 랜더의 color를 바꾸면 색이 바뀐다.
+    // 0 - 회색 - 기본
+    // 1 - 주황 - 부분파손
+    // 2 - 빨강 - 완파. 작동 불가능
 
     [Header("사이즈 (방처럼 2, 4만 존재)")]
     [SerializeField] private ERoomType _type;

@@ -587,3 +587,103 @@ MonoBehaviour:
     equipmentPosition: 208
     systemType: 9
   _teleporterData: []
+  _iconPresets:
+  - overlaySprite: {fileID: 21300000, guid: 399d79bbe47d5374489f2adb6b71f3be, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 127d022cdc0d56c4095d012182b65c7d, type: 3}
+    - {fileID: 21300000, guid: 43beb9dd3c43aef4b9cbd0aca807ca74, type: 3}
+    - {fileID: 21300000, guid: 8299d2868841c2545be142012a2b5865, type: 3}
+    - {fileID: 21300000, guid: 08e94546152f44c42bf50c0038d0096a, type: 3}
+    - {fileID: 21300000, guid: f57a8ab315e709f4dba36e812f3472b0, type: 3}
+    - {fileID: 21300000, guid: d0d7bf0a96ca98b4ab0224b30167d775, type: 3}
+    - {fileID: 21300000, guid: b7120a76f95021d4e8ca0a0a94b2dbb9, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 86175f99f9fde4a409a4e90254fb18b0, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 1be739ea131f56d4b82596a95a5ed79e, type: 3}
+    - {fileID: 21300000, guid: 6b9a3393ba047d8429c0e94f2e945845, type: 3}
+    - {fileID: 21300000, guid: 3b21b0dca14b68b4bb75e7ee1d0a90e3, type: 3}
+    - {fileID: 21300000, guid: 34321b619103fe6459ff0ceb150fb9f5, type: 3}
+    - {fileID: 21300000, guid: e2ba97fb243c9b54aa44f7797c2201b3, type: 3}
+    - {fileID: 21300000, guid: 5039b748d32e3b14991dcd4f8dd3e684, type: 3}
+    - {fileID: 21300000, guid: 22d3be8e2096abb46865c1e16f336af8, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: a485dd8875a82ed44b5f21f62d9e9f06, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: ffc6cb229921d0a4db93513f654907bb, type: 3}
+    - {fileID: 21300000, guid: 1d658069f5afe6148a37b5b08c1132c8, type: 3}
+    - {fileID: 21300000, guid: 310ddac21b9b9f8488283d21151fbabd, type: 3}
+    - {fileID: 21300000, guid: 450dc7410ab64844e81cbf1d836dd7b4, type: 3}
+    - {fileID: 21300000, guid: 7daa6d6d28736f8419f728ac64fe23f6, type: 3}
+    - {fileID: 21300000, guid: 077c8a2b566d51843a89b996039f7657, type: 3}
+    - {fileID: 21300000, guid: 774627d71c16a914ea12c33dd6b65c8c, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 30790a7d166460e4fb8f91ac2f8f96c8, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: b0cba491f578e104e85c6e1753ba9837, type: 3}
+    - {fileID: 21300000, guid: e5d2dc28df879394dbc277e365007284, type: 3}
+    - {fileID: 21300000, guid: 40f92a3901940294fa1d9908fb6686be, type: 3}
+    - {fileID: 21300000, guid: f545d8c7125ed8e4a965e86ba413e8bf, type: 3}
+    - {fileID: 21300000, guid: 0395a09cd140ef342b8af377b1cdeadb, type: 3}
+    - {fileID: 21300000, guid: b0de9cec742e0814d85b67fc90c490a4, type: 3}
+    - {fileID: 21300000, guid: 5d62ccd7b638d1d4a9f297d6fcbebce5, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 5d636097b4cb20b4182ebd8d5b1fc3dd, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 42cadccf9e97cbe49bd514c4d4f88a18, type: 3}
+    - {fileID: 21300000, guid: 8db8d843eaee43a41945f1cf5e07120a, type: 3}
+    - {fileID: 21300000, guid: 9b82f09f10321084788e7549fc1b0332, type: 3}
+    - {fileID: 21300000, guid: 5247af502c006fb42b2004281f4877e0, type: 3}
+    - {fileID: 21300000, guid: 59e3691a34b60eb4da959d5beedb6a66, type: 3}
+    - {fileID: 21300000, guid: 36e0619efd95f5f4d963e37ce01b794e, type: 3}
+    - {fileID: 21300000, guid: da8cec3acee43244baeb1c77ecba5b97, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 3bf6792e28d5a144683233fc2042a82b, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: c17a0f909607de04ea16e8a804ace85d, type: 3}
+    - {fileID: 21300000, guid: 39d1dd2f4da1c1f4f9c31942e90678c3, type: 3}
+    - {fileID: 21300000, guid: d662d0c85363e094aa7b7702b1e3965b, type: 3}
+    - {fileID: 21300000, guid: 01d1a08df2cd8334da835ac61d74dcee, type: 3}
+    - {fileID: 21300000, guid: 7975fa0284443cc4caa4386ff9416a5a, type: 3}
+    - {fileID: 21300000, guid: b65e9d803e4555745925c531d44b00cd, type: 3}
+    - {fileID: 21300000, guid: 2edbf012bfe99aa41b92efd0495f63a6, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: c532132ed2b812b478915d69823bd19a, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: b646f373359ff634cab80c301c1a3336, type: 3}
+    - {fileID: 21300000, guid: 44390a20db9ea57458e171ecd6a92344, type: 3}
+    - {fileID: 21300000, guid: 0e28d113389382d459b89fada10e0dcd, type: 3}
+    - {fileID: 21300000, guid: 31fa198ab5264d845bb795cbe9fdae0c, type: 3}
+    - {fileID: 21300000, guid: 2415f5bfc66a24141ac5358783a074d7, type: 3}
+    - {fileID: 21300000, guid: b38a591da85d3e04890dc87240d6fc83, type: 3}
+    - {fileID: 21300000, guid: 3d1652c59a56e474d9b7590612d51bb9, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: fa6b8bdc8e4640a4ea349aee3f417472, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 73e2a368a8fc5704190e2c7bd764d014, type: 3}
+    - {fileID: 21300000, guid: 8eaf0597da20305498d2a576f627c58d, type: 3}
+    - {fileID: 21300000, guid: db385ef0d5371eb4cb63a3ac2aa5cd70, type: 3}
+    - {fileID: 21300000, guid: 484d8efb56485e849a273ee061e077ab, type: 3}
+    - {fileID: 21300000, guid: 0ee8f945bb97cf0449aaf4b215ed04c4, type: 3}
+    - {fileID: 21300000, guid: 6c9a0601a8f23c14da86e159e30b36a2, type: 3}
+    - {fileID: 21300000, guid: 6e3e1effe53cb5a449856dc0e2ad8eda, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 529355233de3dc9499df57c5a111fe2a, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: cdc33b2887f849143a7d2405a4082f6f, type: 3}
+    - {fileID: 21300000, guid: 494b7bf2e8df1d54ebd21e0dfe76df00, type: 3}
+    - {fileID: 21300000, guid: f4f493628979d264690f908c49b4a262, type: 3}
+    - {fileID: 21300000, guid: a96fe6ccedc8a8e48ae7736acddd37e4, type: 3}
+    - {fileID: 21300000, guid: 7911758e102a89142a6c2d029b81941b, type: 3}
+    - {fileID: 21300000, guid: 0cb1b6bf7db37544ba8df7332f80971e, type: 3}
+    - {fileID: 21300000, guid: 497ee41beafc4ea489d4202ef3fb63f5, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 332a1e67a741c514fb67aa1a432a2bb8, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 4e35527501c944a4697a768caf049003, type: 3}
+    - {fileID: 21300000, guid: 8038e1ae71ac62545960954c08013a97, type: 3}
+    - {fileID: 21300000, guid: 1e7962aa6ba5e0b438ef1aefd6fab453, type: 3}
+    - {fileID: 21300000, guid: a634b739a679a144cb3fde001849ac66, type: 3}
+    - {fileID: 21300000, guid: 7a64aed0d70afca46a793275b726b32d, type: 3}
+    - {fileID: 21300000, guid: db8bca1c30952f5488ac67426a11c56e, type: 3}
+    - {fileID: 21300000, guid: e42634d4a5790cf4fbef443d3317e589, type: 3}
+  - overlaySprite: {fileID: 21300000, guid: 029388ce081fc474bbac35a92f2863b1, type: 3}
+    uiSprites:
+    - {fileID: 21300000, guid: 1e67b476581a25046a2463ede7798c1c, type: 3}
+    - {fileID: 21300000, guid: 16f82c6258fc3554ba8853e004ea5bbc, type: 3}
+    - {fileID: 21300000, guid: 2af0ebd040ba1fb41974152803f75101, type: 3}
+    - {fileID: 21300000, guid: 253355e810a1a5b499e638294af7e3c4, type: 3}
+    - {fileID: 21300000, guid: 26a6f548aedc82449a1f61d89d77646f, type: 3}
+    - {fileID: 21300000, guid: a7b2fbbbaf0fb9047884a878adcc95c4, type: 3}
+    - {fileID: 21300000, guid: 6b437481ae038e2479c32d54678655e6, type: 3}
