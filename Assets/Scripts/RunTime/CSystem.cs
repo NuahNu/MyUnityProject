@@ -50,13 +50,14 @@ public class CSystem : MonoBehaviour
 
 
     // 연결된 방
-    [Header("연결된 방 스크립트")]
-    [ReadOnly]
-    [SerializeField] private CRoom _room = null;
+    // 
+    // 
     #endregion
 
     #region 내부 변수
-    // 레벨 / 강화 수준
+    // 레벨
+    // 소속된 방.
+    private CRoom _room;
     #endregion
 
     public bool IsExistInterior { get { return _interior != null; } }
