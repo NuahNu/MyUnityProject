@@ -61,6 +61,7 @@ public class CSystem : MonoBehaviour
     #endregion
 
     public bool IsExistInterior { get { return _interior != null; } }
+    public bool IsUseGlow { get { return _interior.IsUseGlow; } } 
 
     void Awake()
     {

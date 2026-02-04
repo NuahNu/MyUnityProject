@@ -38,6 +38,8 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     #endregion
 
     public bool IsExistSystem { get { return _system != null; } }
+    public bool IsUseGlow { get { return _system.IsUseGlow; } }
+
     public ERoomType RoomType { get { return _type; } }
 
     public int AllyCount { get { return _allys.Count; } }

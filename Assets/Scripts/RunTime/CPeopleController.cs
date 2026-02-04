@@ -277,7 +277,8 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                 }
                 else if (_currentTargetRoom.IsExistSystem) // 시스템 작업
                 {
-                    ChangeState(EPeopleState.Work);
+                    if (_currentTargetRoom.IsUseGlow)
+                        ChangeState(EPeopleState.Work);
                 }// else {   } // idle
             }
             else

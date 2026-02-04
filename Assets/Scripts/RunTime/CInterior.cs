@@ -54,6 +54,8 @@ public class CInterior : MonoBehaviour
 
     public CInteriorPreset Preset { get { return _preset; } set { _preset = value; InitData(); } }
 
+    public bool IsUseGlow { get { return _isUseGlow; } }
+
     private void InitData()
     {
         if (_preset != null)
