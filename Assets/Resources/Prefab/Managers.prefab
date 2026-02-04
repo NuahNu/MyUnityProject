@@ -312,13 +312,121 @@ MonoBehaviour:
     type: 1
     equipmentPosition: 3
     systemType: 3
-  _dronesData: []
+  _dronesData:
+  - mainSprite: {fileID: 21300000, guid: 7730632effd15724aa489d44b3da3357, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 22
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: d541a0c3f1cbc234097699b7e1351d7a, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 183
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 1df08322c8719574bb81217f27a26e1e, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 40
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 6ea0830a7898b9e4396bace49476ce15, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 104
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 41edffecaba92044c9c71a9f532efbe0, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 56
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: fb4fcb45827635949b4bbc1d3a8e723d, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 81
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 09ead392f45fe2940855810dd3836716, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 67
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 8535ec763f44d234c81b93ee389e2f8b, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 63
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 0363fc58b85698142aede228d641648e, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 208
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 3633e6c2d31c38246a1d00dca2e1826f, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 14
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 0e5eca51aae0a2a4398d78445bb07d5c, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 243
+    systemType: 4
+  - mainSprite: {fileID: 21300000, guid: 537ee8825cdb69846a2006d06c43291d, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 148
+    systemType: 4
   _medbayData:
   - mainSprite: {fileID: 21300000, guid: 40445b6d9923c9840995f2b618d9c1bb, type: 3}
     isUseGlow: 0
     glowSprites: []
     type: 0
     equipmentPosition: 6
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: 4de840eb64ef671428ff48a8f7437b87, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 14
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: 1e0b7fe99b09c964da009406e53968bd, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 40
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: 481206a0a6ca6f54898657492e2570e9, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 65
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: d34090814221351469dae1085aea87d0, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 12
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: 357452650cebbc94580e36cbbfbc31fc, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 12
+    systemType: 5
+  - mainSprite: {fileID: 21300000, guid: 357452650cebbc94580e36cbbfbc31fc, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 0
+    equipmentPosition: 144
     systemType: 5
   _pilotData:
   - mainSprite: {fileID: 21300000, guid: 3efa5665d3eaed047aa3c41549507d5a, type: 3}
@@ -330,6 +438,24 @@ MonoBehaviour:
     type: 2
     equipmentPosition: 63
     systemType: 6
+  - mainSprite: {fileID: 21300000, guid: 84c2f021f0922e346a70a414c1e58d1a, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 67bdb2e666b80b04fb3925e1150d72d8, type: 3}
+    - {fileID: 21300000, guid: 83fb2424d1aa6924cb2dfe418a21ceaa, type: 3}
+    - {fileID: 21300000, guid: 1bc248928495327428cceab6c03ea0f7, type: 3}
+    type: 1
+    equipmentPosition: 46
+    systemType: 6
+  - mainSprite: {fileID: 21300000, guid: dd3ee732f33bc3f4ab5981fb4de2b27e, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 8f6754596393c2d4ea3ce9816874f604, type: 3}
+    - {fileID: 21300000, guid: d068221cb801e4d44b01863f95a09090, type: 3}
+    - {fileID: 21300000, guid: c0b18a56e89dc5542856321ab231b9a6, type: 3}
+    type: 1
+    equipmentPosition: 12
+    systemType: 6
   _doorData:
   - mainSprite: {fileID: 21300000, guid: 4a75275c04bdce443a579b6adf568b76, type: 3}
     isUseGlow: 0
@@ -337,5 +463,127 @@ MonoBehaviour:
     type: 1
     equipmentPosition: 3
     systemType: 8
-  _cloakingData: []
+  - mainSprite: {fileID: 21300000, guid: ae508e201b3d34b4caf705cec26b3c5d, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 48
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: 67c2fb44da94e254d9c82fb1eb1d614f, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 48
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: b136329851897b044ac99d6dbb3824f6, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 48
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: db35876ce121a2444a73797869b7d31f, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 7
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: 62f64934596b8b74b83e48d7eb326495, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 136
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: ab98e09d673a2d949bea15272f86e963, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 34
+    systemType: 8
+  - mainSprite: {fileID: 21300000, guid: e7478eb975e0cd44686e4810bcb36503, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 192
+    systemType: 8
+  _sensorsData:
+  - mainSprite: {fileID: 21300000, guid: e9684ec2fa730e2438a3e9a97e4c4122, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 48
+    systemType: 7
+  - mainSprite: {fileID: 21300000, guid: 8a7cf626c0bf95c4f8350875c8c55455, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 3
+    systemType: 7
+  - mainSprite: {fileID: 21300000, guid: b6c6394028263554498e7a1e79bd4e2f, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 1
+    equipmentPosition: 46
+    systemType: 7
+  - mainSprite: {fileID: 21300000, guid: 2383e733821ecce46958b1c35e5af1da, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 192
+    systemType: 7
+  - mainSprite: {fileID: 21300000, guid: 40009f5629cb5854a836cb859a290854, type: 3}
+    isUseGlow: 0
+    glowSprites: []
+    type: 2
+    equipmentPosition: 12
+    systemType: 7
+  _cloakingData:
+  - mainSprite: {fileID: 21300000, guid: 8de25e63a26d5b94abfd264e14d82c38, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 5bbc86d34b8c6bf458bd7b3804765ceb, type: 3}
+    type: 0
+    equipmentPosition: 6
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: d851606636a88d44f872df703e2683ae, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 01e6b31844c0f554b8113ab8e1421758, type: 3}
+    type: 0
+    equipmentPosition: 40
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: a0b6b60b06e1c934e8ec688517568d46, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 05b59104646013a4db5eacf5e5c62001, type: 3}
+    type: 1
+    equipmentPosition: 3
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: 54dfa88ab424b384c96dbac953f034be, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: 9018f49e418211e4d9c3d8aa7467f315, type: 3}
+    type: 2
+    equipmentPosition: 7
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: 5fddb8cd17414b94cb891eefbcd890ee, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: f479fd9c536293f4da22f8f7378b3b56, type: 3}
+    type: 1
+    equipmentPosition: 44
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: 755030e82377ad645a7456cda62c2600, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: c28cdf73dd70b7f4f83d771adc17c57a, type: 3}
+    type: 1
+    equipmentPosition: 14
+    systemType: 9
+  - mainSprite: {fileID: 21300000, guid: c62e93e55b06b934590fa9bda3976d31, type: 3}
+    isUseGlow: 1
+    glowSprites:
+    - {fileID: 21300000, guid: f961cdcae3ed85b439d00e81ad104c9d, type: 3}
+    type: 1
+    equipmentPosition: 208
+    systemType: 9
   _teleporterData: []
