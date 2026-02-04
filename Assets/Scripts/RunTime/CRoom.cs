@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -187,7 +186,7 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
 
             if (_type != array[i].type)   // 방과 시설의 크기가 같고
                 continue;
-            if (((int)_doorPosition & (int)array[i].equipmentPosition) == 0) // 문과 장비의 위치가 겹치지 않으면 
+            if (((int)_doorPosition & (int)array[i].equipmentPosition) != 0) // 문과 장비의 위치가 겹치지 않으면 
                 continue;
 
             seleted = array[i];
