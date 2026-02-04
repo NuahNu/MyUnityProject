@@ -231,14 +231,7 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
         }
         else
         {
-            Vector3 pos = _currentTargetRoom.transform.position;
-            pos.z = this.transform.position.z;
-            this.transform.position = pos;
-            ChangeState(EPeopleState.Idle);
 
-            // 강제로 아래 보도록
-            //_currentDir = new Vector2(0f, -1f);
-            //NotifyDir();
 
             // 공격 대상 판별. 함수로 뺀다. - 방의 상태를 검사하는 함수라고 생각하면 될듯?
             if (gameObject.tag == _currentTargetRoom.tag)
@@ -277,13 +270,26 @@ public class CPeopleController : MonoBehaviour, IPointerDownHandler
                 }
                 else if (_currentTargetRoom.IsExistSystem) // 시스템 작업
                 {
+                    // 공통 코드
                     if (_currentTargetRoom.IsUseGlow)
                         ChangeState(EPeopleState.Work);
-                }// else {   } // idle
+                    else
+                    {
+                        ChangeState(EPeopleState.Idle);
+                    }
+                }
+                else
+                {
+                    ChangeState(EPeopleState.Idle);
+                } // idle
             }
             else
             {
+                // 적의 함선에서...
 
+                // 적이 있다면 공격
+                // 시스템의 체력이 남아있다면 공격
+                // 아니면 아이들.
             }
         }
     }
