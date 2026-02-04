@@ -100,6 +100,7 @@ public class CInteriorManager : MonoBehaviour
         _interiorDataDic.Add(CSystem.ESystemType.Sensors, _sensorsData);
         _interiorDataDic.Add(CSystem.ESystemType.Cloaking, _cloakingData);
         _interiorDataDic.Add(CSystem.ESystemType.Teleporter, _teleporterData);
+        // 이 위에꺼도 이렇게 작성했다면 손이 참 편했을텐데
 
         for (int i = 0; i < _iconPresets.Length; i++)
         {
