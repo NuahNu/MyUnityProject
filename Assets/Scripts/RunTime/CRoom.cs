@@ -45,14 +45,15 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     public ERoomType RoomType { get { return _type; } }
 
     public int AllyCount { get { return _allys.Count; } }
-    public int EnemyCount {  get { return _enemys.Count; } }
+    public int EnemyCount { get { return _enemys.Count; } }
 
-    public int RoomSize => _type switch {
+    public int RoomSize => _type switch
+    {
         ERoomType.O_2_2 => 4,
         ERoomType.I_2_1 => 2,
         ERoomType.I_1_2 => 2,
         _ => 0
-        };
+    };
 
     void Awake()
     {
@@ -179,6 +180,11 @@ public class CRoom : MonoBehaviour, IPointerDownHandler
     public CSystem Install(CSystem.ESystemType type)
     {
         // 설치 가능 조건 확인
+        if (!CInteriorManager.Instance.DataDic.ContainsKey(type))
+        {
+            Debug.LogWarning($"CInteriorManager.Instance.DataDic.ContainsKey({type}) == null");
+            return null;
+        }
         CInteriorPreset[] array = CInteriorManager.Instance.DataDic[type];
 
         CInteriorPreset seleted = null;

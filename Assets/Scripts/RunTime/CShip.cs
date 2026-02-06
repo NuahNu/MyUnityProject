@@ -40,6 +40,20 @@ public class CShip : MonoBehaviour
     // 추가 순서는 System의 enum 참고
     // 이거 꼭 List여야 하나?
 
+    [Header("전력")]
+    [ReadOnly]
+    [SerializeField] private int _maxPower = 40;
+    [SerializeField] private int _currentMaxPower = 8;
+    [ReadOnly]
+    [SerializeField] private int _remainingPower = 8;
+
+
+    [Header("무기 위치")]
+    [SerializeField] private Transform _weaponRoot;
+    [SerializeField] private Transform[] _weaponPos;
+
+    [Header("설치된 무기")]
+    [SerializeField] private List <CWeapon> _weapons = new();
     #endregion
 
     #region 내부 변수
@@ -64,7 +78,35 @@ public class CShip : MonoBehaviour
         {
             childrentransform.gameObject.tag = this.gameObject.tag;
         }
-        AddDefaultSystem();
+
+        CheckWeaponRoots();
+
+    }
+
+    void CheckWeaponRoots()
+    {
+        if(_weaponPos == null || _weaponPos.Length == 0)
+        {
+            Debug.LogWarning($"At {gameObject.name} : _weaponPos == null || _weaponPos.Length == 0");
+            return;
+        }
+
+        if (_weaponRoot == null)
+        {
+            Transform weaponRoot = transform.Find("WeaponRoot");
+
+            if (weaponRoot != null)
+            {
+                _weaponRoot = weaponRoot;
+            }
+            else
+            {
+                Debug.LogWarning($"At {gameObject.name} : _weaponRoot == null");
+                return;
+            }
+
+            _weaponRoot.localPosition = Vector3.zero;
+        }
     }
 
     void AddDefaultSystem()
@@ -75,9 +117,14 @@ public class CShip : MonoBehaviour
         }
     }
 
-    void Start()
+    void AddDefaultWeapon()
     {
 
+    }
+
+    void Start()
+    {
+        AddDefaultSystem();
     }
 
     void Update()
@@ -126,4 +173,28 @@ public class CShip : MonoBehaviour
 
         return false;
     }
+
+    public bool SupplyPower(CSystem.ESystemType type)
+    {
+        if(_remainingPower == 0) return false;
+
+        if (!_installedSystem.ContainsKey(type)) return false;
+
+        if (_installedSystem[type].MaxPower <= _installedSystem[type].CurrentPower) return false;
+
+        _installedSystem[type].CurrentPower++;
+
+        return true;
+    }
+    public bool CutOffSupply(CSystem.ESystemType type)
+    {
+        if (!_installedSystem.ContainsKey(type)) return false;
+
+        if (0 >= _installedSystem[type].CurrentPower) return false;
+
+        _installedSystem[type].CurrentPower--;
+
+        return false;
+    }
+
 }

@@ -49,9 +49,12 @@ public class CSystem : MonoBehaviour
     // UI 를 담당할 친구 하나 추가.
 
 
-    // 연결된 방
     // 
-    // 
+    [Header("전력 관련")]
+    [ReadOnly]
+    [SerializeField] private int _maxPower;
+    [ReadOnly]
+    [SerializeField] private int _currentPower;
     #endregion
 
     #region 내부 변수
@@ -63,7 +66,10 @@ public class CSystem : MonoBehaviour
     #endregion
 
     public bool IsExistInterior { get { return _interior != null; } }
-    public bool IsUseGlow { get { return _interior.IsUseGlow; } } 
+    public bool IsUseGlow { get { return _interior.IsUseGlow; } }
+
+    public int MaxPower { get { return _maxPower; } }
+    public int CurrentPower { get { return _currentPower; } set { _currentPower = value; } }
 
     void Awake()
     {
@@ -85,7 +91,7 @@ public class CSystem : MonoBehaviour
         {
             _interior.ChangeState(CInterior.EInterState.Damaged);
         }
-        else if (true)  // 말 그대로 전력이 공급중이고, 피해가 없다면
+        else if (_currentPower > 0)  // 말 그대로 전력이 공급중이고, 피해가 없다면
         {
             _interior.ChangeState(CInterior.EInterState.PowerOn);
         }
@@ -103,9 +109,19 @@ public class CSystem : MonoBehaviour
 
     internal void Init(CRoom cRoom, CInteriorPreset seleted, CIconPreset iconPreset)
     {
+        // 자신 설정.
         // 방 연결
         _room = cRoom;
 
+        _systemType = seleted.systemType;
+        _maxPower = _systemType switch
+        {
+            ESystemType.Shields => 8,
+            ESystemType.Weapons => 20,
+            _ => 4,
+        };
+
+        // 인테리어 생성 및 설정. ( 프리팹 가져오기는 어땠을까
         GameObject interiorGO = new GameObject("Interior");
         interiorGO.transform.parent = this.transform;
         interiorGO.transform.localPosition = new Vector3(0, 0, Common.z_offset);
@@ -115,7 +131,7 @@ public class CSystem : MonoBehaviour
         _interior.Preset = seleted;
 
         _iconPreset = iconPreset;
-
         _interior.OverlayIcon = _iconPreset.overlaySprite;
+        // UI 설정. 여기서?
     }
 }
