@@ -213,6 +213,8 @@ public class CInterior : MonoBehaviour
         }
 
         _overlayRenderer.sprite = _overlaySprite;
+
+        ChangeState(ESystemState.PowerOff, true);
     }
     private void ChangeGlowSprite()
     {
@@ -250,9 +252,10 @@ public class CInterior : MonoBehaviour
                 break;
         }
     }
-    public void ChangeState(ESystemState state)
+    public void ChangeState(ESystemState state, bool force = false)
     {
-        if (_currentState == state) return;
+        if (force) ;
+        else if (_currentState == state) return;
 
         _currentState = state;
 
