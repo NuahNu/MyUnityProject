@@ -86,8 +86,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7892b60c980e0d4ba0c0300f1bf0ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainRawImage: {fileID: 8432482328775107696}
-  GlowRawImage: {fileID: 3092579137125511330}
+  _mainRawImage: {fileID: 8432482328775107696}
+  _isUseGlowImage: 0
+  _glowRawImage: {fileID: 3092579137125511330}
 --- !u!1 &6762799500934844230
 GameObject:
   m_ObjectHideFlags: 0

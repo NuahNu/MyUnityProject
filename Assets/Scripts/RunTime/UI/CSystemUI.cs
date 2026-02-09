@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 #region CButtonUI
@@ -9,7 +8,7 @@ using UnityEngine.UI;
 */
 #endregion
 
-public class CButtonUI : MonoBehaviour
+public class CSystemUI : MonoBehaviour
 {
     #region 인스펙터
     [Header("연결된 시스템")]
@@ -86,16 +85,14 @@ public class CButtonUI : MonoBehaviour
             if (i < _barCount)
             {
                 _barUIList[i].MainRawImage.texture = _bar;
-                _barUIList[i].MainRawImage.color = _green;
 
-                _barUIList[i].GlowRawImage.color = _green;
+                _barUIList[i].AllColor = _green;
             }
             else
             {
                 _barUIList[i].MainRawImage.texture = _line;
-                _barUIList[i].MainRawImage.color = Color.white;
 
-                _barUIList[i].GlowRawImage.color = Color.white;
+                _barUIList[i].AllColor = Color.white;
             }
         }
     }

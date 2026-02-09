@@ -12,31 +12,45 @@ public class CRawImageUI : MonoBehaviour
 {
     #region 인스펙터
     [Header("Main")]
-    public RawImage MainRawImage;
+    [SerializeField] private RawImage _mainRawImage;
     [Header("Glow")]
-    public RawImage GlowRawImage;
+    [SerializeField] private bool _glowFlag = false;
+    [SerializeField] private RawImage _glowRawImage;
     #endregion
 
     #region 내부 변수
 
     #endregion
+    public RawImage MainRawImage { get { return _mainRawImage; } }
+    public RawImage GlowRawImage { get { return _glowRawImage; } }
 
-    void Awake()
+    public bool GlowFlag { get { return _glowFlag; } set { _glowFlag = value; } }
+
+    public Color AllColor
     {
-        if (MainRawImage == null)
+        set
         {
-            Debug.LogWarning($"{gameObject.name} MainRawImage ==  null");
-            Debug.LogWarning($"{gameObject.name} GlowRawImage ==  null");
+            _mainRawImage.color = value;
+            _glowRawImage.color = value;
         }
     }
 
-    void Start()
+    void Awake()
     {
-
-    }
-
-    void Update()
-    {
-
+        if (_mainRawImage == null)
+        {
+            Debug.LogWarning($"{gameObject.name} MainRawImage ==  null");
+        }
+        if (_glowFlag)
+        {
+            if (_glowRawImage == null)
+            {
+                Debug.LogWarning($"{gameObject.name} GlowRawImage ==  null");
+            }
+        }
+        else
+        {
+            _glowRawImage.gameObject.SetActive(false);
+        }
     }
 }
