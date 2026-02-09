@@ -53,7 +53,7 @@ public class CShip : MonoBehaviour
     [SerializeField] private Transform[] _weaponPos;
 
     [Header("설치된 무기")]
-    [SerializeField] private List <CWeapon> _weapons = new();
+    [SerializeField] private List<CWeapon> _weapons = new();
     #endregion
 
     #region 내부 변수
@@ -85,7 +85,7 @@ public class CShip : MonoBehaviour
 
     void CheckWeaponRoots()
     {
-        if(_weaponPos == null || _weaponPos.Length == 0)
+        if (_weaponPos == null || _weaponPos.Length == 0)
         {
             Debug.LogWarning($"At {gameObject.name} : _weaponPos == null || _weaponPos.Length == 0");
             return;
@@ -176,14 +176,15 @@ public class CShip : MonoBehaviour
 
     public bool SupplyPower(CSystem.ESystemType type)
     {
-        if(_remainingPower == 0) return false;
+        if (_remainingPower == 0) return false;
 
         if (!_installedSystem.ContainsKey(type)) return false;
 
         if (_installedSystem[type].MaxPower <= _installedSystem[type].CurrentPower) return false;
 
+        // 시스템의 함수를 부르는것으로 변경한다.
         _installedSystem[type].CurrentPower++;
-
+        //Debug.Log($"{gameObject.name}의 {type}system의 전력 {_installedSystem[type].CurrentPower}로 상승.");
         return true;
     }
     public bool CutOffSupply(CSystem.ESystemType type)
@@ -192,7 +193,9 @@ public class CShip : MonoBehaviour
 
         if (0 >= _installedSystem[type].CurrentPower) return false;
 
+        // 시스템의 함수를 부르는것으로 변경한다.
         _installedSystem[type].CurrentPower--;
+        //Debug.Log($"{gameObject.name}의 {type}system의 전력 {_installedSystem[type].CurrentPower}로 감소.");
 
         return false;
     }

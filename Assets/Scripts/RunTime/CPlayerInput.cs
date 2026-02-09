@@ -19,7 +19,8 @@ using UnityEngine.EventSystems;
 public class CPlayerInput : MonoBehaviour
 {
     #region 인스펙터
-
+    [Header("조종할 함선")]
+    [SerializeField] private CShip _ship;
     #endregion
 
     #region 내부 변수
@@ -45,7 +46,7 @@ public class CPlayerInput : MonoBehaviour
 
     void Start()
     {
-
+        // 없으면 씬에서 tag가 ally인 함선을 찾아온다.
     }
     private void OnDestroy()
     {
@@ -98,7 +99,7 @@ public class CPlayerInput : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (Instance == null || Instance != this)
         {
@@ -108,5 +109,67 @@ public class CPlayerInput : MonoBehaviour
         }
         Instance = this; ;
 
+        ControllShip();
+    }
+    private void ControllShip()
+    {
+        if (_ship == null) return;
+
+        if (!Input.GetKey(KeyCode.LeftShift))
+        {
+            // 지금 방식에서 존재하는 시스템 배열을 가져와서
+            // UI 순서대로 매핑하는 기능이 피룡하다.
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Shields);
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Engines);
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Oxygen);
+            }
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Medbay);
+            }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Weapons);
+            }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                _ship.SupplyPower(CSystem.ESystemType.Drones);
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Shields);
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Engines);
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Oxygen);
+            }
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Medbay);
+            }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Weapons);
+            }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                _ship.CutOffSupply(CSystem.ESystemType.Drones);
+            }
+        }
     }
 }

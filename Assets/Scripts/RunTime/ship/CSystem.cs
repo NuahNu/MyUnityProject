@@ -21,7 +21,7 @@ ui
 
 public class CSystem : MonoBehaviour
 {
-    // 우선순위, UI 출력순서도 겸한다.
+    // 우선순위, UI 출력순서도 겸한다. - 아늬으이ㅣ
     public enum ESystemType
     {
         Shields,
