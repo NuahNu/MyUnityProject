@@ -21,6 +21,9 @@ public class CRawImageUI : MonoBehaviour
     #region 내부 변수
 
     #endregion
+
+    // 이미지를 사용하고 나서 크기 재조정이 필요하다.
+
     public RawImage MainRawImage { get { return _mainRawImage; } }
     public RawImage GlowRawImage { get { return _glowRawImage; } }
 

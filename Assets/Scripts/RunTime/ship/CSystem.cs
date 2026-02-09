@@ -62,8 +62,12 @@ public class CSystem : MonoBehaviour
     // 소속된 방.
     private CRoom _room;
 
-    private CIconPreset _iconPreset;
+    private ESystemState _currentState = ESystemState.PowerOff;
     #endregion
+
+    public CSystemUI SystemUI { get; set; }
+
+    public CIconPreset IconPreset { get; private set; }
 
     public bool IsExistInterior { get { return _interior != null; } }
     public bool IsUseGlow { get { return _interior.IsUseGlow; } }
@@ -89,18 +93,18 @@ public class CSystem : MonoBehaviour
         // 최적화해야함.
         if (_room.NeedExtinguish() || _room.NeedRepair())
         {
-            _interior.ChangeState(CInterior.EInterState.Damaged);
+            ChangeState(ESystemState.Damaged);
         }
         else if (_currentPower > 0)  // 말 그대로 전력이 공급중이고, 피해가 없다면
         {
-            _interior.ChangeState(CInterior.EInterState.PowerOn);
+            ChangeState(ESystemState.PowerOn);
         }
         else    // 최소한의 전력도 없을 경우.
         {
-            _interior.ChangeState(CInterior.EInterState.PowerOff);
+            ChangeState(ESystemState.PowerOff);
         }
 
-        // 이건 따로 다른 변수로 구현한다.
+        // 이건 따로 다른 변수로 구현한다. manning
         //if (0 < (gameObject.tag == "Ally" ? _room.AllyCount : _room.EnemyCount))
         //{
         //
@@ -130,8 +134,20 @@ public class CSystem : MonoBehaviour
         _interior = interiorGO.AddComponent<CInterior>();
         _interior.Preset = seleted;
 
-        _iconPreset = iconPreset;
-        _interior.OverlayIcon = _iconPreset.overlaySprite;
+        IconPreset = iconPreset;
+        _interior.OverlayIcon = IconPreset.overlaySprite;
         // UI 설정. 여기서?
+    }
+
+    void ChangeState(ESystemState state)
+    {
+        if (_currentState == state) return;
+
+        _currentState = state;
+        _interior.ChangeState(_currentState);
+
+        // 연결 후 이 코드 제거 고려
+        if (SystemUI != null) 
+            SystemUI.ChangeState(_currentState);
     }
 }

@@ -49,12 +49,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _system: {fileID: 0}
-  _asdf: 0
-  _barUIProfab: {fileID: 3717083394291334283, guid: 1530e12f25d015f4b940a3705bbee5a5, type: 3}
+  _RawImagePrefab: {fileID: 3717083394291334283, guid: 1530e12f25d015f4b940a3705bbee5a5, type: 3}
+  _lineTexture: {fileID: 2800000, guid: b443616c8d94f954a818c67fc83ef7cb, type: 3}
+  _barTexture: {fileID: 2800000, guid: 349275f34d3686b41967716c1785e05a, type: 3}
+  _barGlowTexture: {fileID: 2800000, guid: 025872ecb844bdc4182e5aaa4134fb39, type: 3}
   _barUIList: []
-  _posOffset: {x: 0, y: 10}
+  _barOffset: {x: 0, y: 40}
+  _barInterval: {x: 0, y: 10}
+  _iconTexture: {fileID: 0}
+  _iconGlowTexture: {fileID: 0}
+  _iconObject: {fileID: 0}
+  _iconOffset: {x: 0, y: 20}
   _canvas: {fileID: 0}
-  _line: {fileID: 2800000, guid: b443616c8d94f954a818c67fc83ef7cb, type: 3}
-  _bar: {fileID: 2800000, guid: 349275f34d3686b41967716c1785e05a, type: 3}
-  _barGlow: {fileID: 2800000, guid: 025872ecb844bdc4182e5aaa4134fb39, type: 3}
   _green: {r: 0.39215687, g: 1, b: 0.39215687, a: 1}

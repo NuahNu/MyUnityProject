@@ -41,7 +41,14 @@ public enum ERoomType
     I_2_1,  // °¡·Î·Î ±ä 2Ä­
     I_1_2   // ¼¼·Î·Î ±ä 2Ä­
 }
-
+public enum ESystemState
+{
+    PowerOff,
+    PowerOn,
+    Damaged,
+    FatalDamage,
+    Count
+}
 public static class Common
 {
     public static float z_offset = -0.01f;

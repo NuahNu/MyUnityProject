@@ -31,10 +31,22 @@ public class CInteriorPreset
 [System.Serializable]
 public class CIconPreset
 {
+    public enum ESpriteID
+    {
+        Blue,
+        Green,
+        GreenGlow,
+        Grey,
+        GreyGlow,
+        Orange,
+        OrangeGlow,
+        Red,
+        RedGlow,
+    }
     [Header("오버레이 이미지")]
     public Sprite overlaySprite;
 
-    [Header("UI 이미지 (블루, 그린, 오렌지, 레드 (1,2) 순서로 넣을 것.)")]
+    [Header("UI 이미지 (블루, 그린, grey, 오렌지, 레드 (1,2) 순서로 넣을 것. SpriteID 참고)")]
     public Sprite[] uiSprites;
 }
 

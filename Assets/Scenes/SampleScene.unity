@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4050028218389439662, guid: 7d8af1101be5d8f4c911d5ffe7a527c2, type: 3}
+      propertyPath: _barInterval.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8876500985157219898, guid: 7d8af1101be5d8f4c911d5ffe7a527c2, type: 3}
       propertyPath: m_Name
       value: tmp
@@ -1250,6 +1254,422 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d4a3187376c7c444fac2e1aab57776ae, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9501c093778c4b64c848786792ee740a, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 08e94546152f44c42bf50c0038d0096a, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: f57a8ab315e709f4dba36e812f3472b0, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: d0d7bf0a96ca98b4ab0224b30167d775, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[0].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: b7120a76f95021d4e8ca0a0a94b2dbb9, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1be739ea131f56d4b82596a95a5ed79e, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b9a3393ba047d8429c0e94f2e945845, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b21b0dca14b68b4bb75e7ee1d0a90e3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 774fbb4c6816ac34f96c50b1a3d049b3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 507c4eb78cdde2248857745cad56c8f3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 34321b619103fe6459ff0ceb150fb9f5, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: e2ba97fb243c9b54aa44f7797c2201b3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5039b748d32e3b14991dcd4f8dd3e684, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[1].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 22d3be8e2096abb46865c1e16f336af8, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ffc6cb229921d0a4db93513f654907bb, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d658069f5afe6148a37b5b08c1132c8, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 310ddac21b9b9f8488283d21151fbabd, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: a9c204425484a5d479e540ad6ab81331, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 29d8732fd9817b64e9c341f8f6e2a3c7, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 450dc7410ab64844e81cbf1d836dd7b4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7daa6d6d28736f8419f728ac64fe23f6, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 077c8a2b566d51843a89b996039f7657, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[2].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 774627d71c16a914ea12c33dd6b65c8c, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 97211233539ad4745b40881ff8b9a852, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 20c6275e3262551439c501cc47d87d6b, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: f545d8c7125ed8e4a965e86ba413e8bf, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0395a09cd140ef342b8af377b1cdeadb, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: b0de9cec742e0814d85b67fc90c490a4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[3].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d62ccd7b638d1d4a9f297d6fcbebce5, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 42cadccf9e97cbe49bd514c4d4f88a18, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8db8d843eaee43a41945f1cf5e07120a, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9b82f09f10321084788e7549fc1b0332, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d6b17920614bda54fa55dcfa6c231185, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e54de6d8c2cbb2469bd8f43310887a6, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5247af502c006fb42b2004281f4877e0, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 59e3691a34b60eb4da959d5beedb6a66, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 36e0619efd95f5f4d963e37ce01b794e, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[4].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: da8cec3acee43244baeb1c77ecba5b97, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: c17a0f909607de04ea16e8a804ace85d, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 39d1dd2f4da1c1f4f9c31942e90678c3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: d662d0c85363e094aa7b7702b1e3965b, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: c62007ab1942ff74592d3de25ecc4c04, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 33d1109ad0992514eb76338560e1d24f, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 01d1a08df2cd8334da835ac61d74dcee, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7975fa0284443cc4caa4386ff9416a5a, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: b65e9d803e4555745925c531d44b00cd, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[5].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2edbf012bfe99aa41b92efd0495f63a6, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b646f373359ff634cab80c301c1a3336, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 44390a20db9ea57458e171ecd6a92344, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e28d113389382d459b89fada10e0dcd, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f92bb2036e7bed42b86821685ba7ba5, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 162e33ae8b2a24c43a9f087296b4d4cf, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 31fa198ab5264d845bb795cbe9fdae0c, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2415f5bfc66a24141ac5358783a074d7, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: b38a591da85d3e04890dc87240d6fc83, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[6].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d1652c59a56e474d9b7590612d51bb9, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 73e2a368a8fc5704190e2c7bd764d014, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8eaf0597da20305498d2a576f627c58d, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: db385ef0d5371eb4cb63a3ac2aa5cd70, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9bb8fa8c76c25cd4cb0ff93fde48556d, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: ab3806e5b657da94b8f6e016b037057a, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 484d8efb56485e849a273ee061e077ab, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ee8f945bb97cf0449aaf4b215ed04c4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c9a0601a8f23c14da86e159e30b36a2, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[7].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e3e1effe53cb5a449856dc0e2ad8eda, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: cdc33b2887f849143a7d2405a4082f6f, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 494b7bf2e8df1d54ebd21e0dfe76df00, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: f4f493628979d264690f908c49b4a262, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 84ac12700e6d1d9459519dc96bc37697, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 27079d124d08a854eb8a8a2ffbb2b0d3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: a96fe6ccedc8a8e48ae7736acddd37e4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7911758e102a89142a6c2d029b81941b, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0cb1b6bf7db37544ba8df7332f80971e, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[8].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 497ee41beafc4ea489d4202ef3fb63f5, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e35527501c944a4697a768caf049003, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8038e1ae71ac62545960954c08013a97, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e7962aa6ba5e0b438ef1aefd6fab453, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c1ea4d9184c6bd4eb6b3e138789e287, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: f9df64654b05e3b4cb47cf474d61ee98, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: a634b739a679a144cb3fde001849ac66, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a64aed0d70afca46a793275b726b32d, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: db8bca1c30952f5488ac67426a11c56e, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[9].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: e42634d4a5790cf4fbef443d3317e589, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e67b476581a25046a2463ede7798c1c, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 16f82c6258fc3554ba8853e004ea5bbc, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2af0ebd040ba1fb41974152803f75101, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: b7c5298770960c34c8aa4af41296a1d3, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: ee124d98b362bff4baabd62b7c6e5c91, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 253355e810a1a5b499e638294af7e3c4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 26a6f548aedc82449a1f61d89d77646f, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: a7b2fbbbaf0fb9047884a878adcc95c4, type: 3}
+    - target: {fileID: 5677749090983103077, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
+      propertyPath: _iconPresets.Array.data[10].uiSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b437481ae038e2479c32d54678655e6, type: 3}
     - target: {fileID: 9081979574266302244, guid: e7359f12ed9d4db41b018276cb69a54d, type: 3}
       propertyPath: m_Name
       value: Managers

@@ -14,14 +14,7 @@ using UnityEngine;
 
 public class CInterior : MonoBehaviour
 {
-    public enum EInterState
-    {
-        PowerOff,
-        PowerOn,
-        Damaged,
-        FatalDamage,
-        Count
-    }
+
 
     #region 인스펙터
     [Header("프리셋")]
@@ -62,7 +55,7 @@ public class CInterior : MonoBehaviour
     #endregion
 
     #region 내부 변수
-    private EInterState _currentState = EInterState.PowerOff;
+    private ESystemState _currentState = ESystemState.PowerOff;
     #endregion
 
     public CInteriorPreset Preset { get { return _preset; } set { _preset = value; InitPreset(); } }
@@ -227,12 +220,12 @@ public class CInterior : MonoBehaviour
 
         switch (_currentState)
         {
-            case EInterState.PowerOff:
+            case ESystemState.PowerOff:
                 _glowSpriteRenderer.enabled = false;
                 break;
-            case EInterState.PowerOn:
-            case EInterState.Damaged:
-            case EInterState.FatalDamage:
+            case ESystemState.PowerOn:
+            case ESystemState.Damaged:
+            case ESystemState.FatalDamage:
                 _glowSpriteRenderer.enabled = true;
                 _glowSpriteRenderer.sprite = _glowSprites[0];
                 break;
@@ -245,25 +238,24 @@ public class CInterior : MonoBehaviour
 
         switch (_currentState)
         {
-            case EInterState.PowerOff:
-            case EInterState.PowerOn:
+            case ESystemState.PowerOff:
+            case ESystemState.PowerOn:
                 _overlayRenderer.color = _overlayColors[0];
                 break;
-            case EInterState.Damaged:
+            case ESystemState.Damaged:
                 _overlayRenderer.color = _overlayColors[1];
                 break;
-            case EInterState.FatalDamage:
+            case ESystemState.FatalDamage:
                 _overlayRenderer.color = _overlayColors[2];
                 break;
         }
     }
-    public void ChangeState(EInterState state)
+    public void ChangeState(ESystemState state)
     {
+        if (_currentState == state) return;
 
-        if (_currentState != state)
-        {
-            _currentState = state;
-        }
+        _currentState = state;
+
         ChangeGlowSprite();
         ChangeOverlayIcon();
     }
