@@ -119,6 +119,7 @@ public class CPlayerInput : MonoBehaviour
         {
             // 지금 방식에서 존재하는 시스템 배열을 가져와서
             // UI 순서대로 매핑하는 기능이 피룡하다.
+            // 이 순서는 UI의 순서와 같으므로 ~...
             if (Input.GetKeyDown(KeyCode.A))
             {
                 _ship.SupplyPower(CSystem.ESystemType.Shields);

@@ -64,7 +64,11 @@ public class CSystem : MonoBehaviour
 
     private ESystemState _currentState = ESystemState.PowerOff;
     #endregion
-
+    static public bool IsSubSystem(ESystemType type) => type switch
+    {
+        ESystemType.Pilot or ESystemType.Sensors or ESystemType.Door => true,
+        _ => false
+    };
     public CSystemUI SystemUI { get; set; }
 
     public CIconPreset IconPreset { get; private set; }
@@ -73,7 +77,14 @@ public class CSystem : MonoBehaviour
     public bool IsUseGlow { get { return _interior.IsUseGlow; } }
 
     public int MaxPower { get { return _maxPower; } }
-    public int CurrentPower { get { return _currentPower; } set { _currentPower = value; } }
+    public int CurrentPower
+    {
+        get { return _currentPower; }
+        set
+        {
+            _currentPower = IsSubSystem(_systemType) ? _maxPower : value;
+        }
+    }
 
     void Awake()
     {
@@ -124,6 +135,7 @@ public class CSystem : MonoBehaviour
             ESystemType.Weapons => 20,
             _ => 4,
         };
+        CurrentPower = 0;
 
         // 인테리어 생성 및 설정. ( 프리팹 가져오기는 어땠을까
         GameObject interiorGO = new GameObject("Interior");
@@ -147,7 +159,7 @@ public class CSystem : MonoBehaviour
         _interior.ChangeState(_currentState);
 
         // 연결 후 이 코드 제거 고려
-        if (SystemUI != null) 
+        if (SystemUI != null)
             SystemUI.ChangeState(_currentState);
     }
 }

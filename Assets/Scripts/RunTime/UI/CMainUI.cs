@@ -79,7 +79,7 @@ public class CMainUI : MonoBehaviour
                 if (_allySystemDic.ContainsKey(type) && !_allySystemUIDic.ContainsKey(type))
                 {
                     //type에 맞는 시스템 UI를 만든다.
-                    GameObject tmp = Instantiate(_systemUIPrefab, _systemUIOffse);
+                    GameObject tmp = Instantiate(_systemUIPrefab, (CSystem.IsSubSystem(type) ? _subSystemUIOffse : _systemUIOffse));
 
                     tmp.name = type.ToString();
 
@@ -94,15 +94,18 @@ public class CMainUI : MonoBehaviour
                     }
                 }
             }
-            // 위치 갱신
+            // 위치 갱신 - 배와 직접 연결이 아니라 컨트롤러와의 연결로 구현하면 
+            // 거기의 키 조작 순서에 따라 그리면 된다?
             int count = 0;
+            int subCount = 0;   // 얘는 우에서 좌로 역순으로 그려야 패팅이 될 것 같은데>?
             for (int i = 0; i < (int)CSystem.ESystemType.Count; i++)
             {
                 CSystem.ESystemType type = (CSystem.ESystemType)i;
 
                 if (_allySystemUIDic.ContainsKey(type))
                 {
-                    _allySystemUIDic[type].transform.localPosition = new Vector2( _systemUIInterval.x * count++,0/*_systemUIInterval.y*/);
+                    _allySystemUIDic[type].transform.localPosition = new Vector2(
+                        (CSystem.IsSubSystem(type) ? _systemUIInterval.x * subCount++ : _systemUIInterval.x * count++), 0/*_systemUIInterval.y*/);
                 }
             }
             _allyChangeFlag = false;
