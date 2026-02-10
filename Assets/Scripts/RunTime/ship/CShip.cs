@@ -54,12 +54,20 @@ public class CShip : MonoBehaviour
 
     [Header("설치된 무기")]
     [SerializeField] private List<CWeapon> _weapons = new();
+
+    [Header("UI확인용")]
+    [ReadOnly]
+    [SerializeField] private CMainUI _mainUI;
     #endregion
 
     #region 내부 변수
     //private Dictionary<GameObject, string> childObjects; 
     private readonly Dictionary<CSystem.ESystemType, CSystem> _installedSystem = new();
     #endregion
+
+    public CMainUI MainUI { get { return _mainUI; } set { _mainUI = value; } }
+
+    public Dictionary<CSystem.ESystemType, CSystem> InstalledSystem {  get { return _installedSystem; } }
 
     private void Reset()
     {
@@ -168,7 +176,7 @@ public class CShip : MonoBehaviour
         }
 
         // 성공시 대충 다 연결
-
+        MainUI.ChangeFlag(this.tag);
         // 성공 여부 반환
 
         return false;
@@ -199,5 +207,4 @@ public class CShip : MonoBehaviour
 
         return false;
     }
-
 }

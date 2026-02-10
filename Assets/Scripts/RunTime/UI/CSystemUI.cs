@@ -169,7 +169,7 @@ public class CSystemUI : MonoBehaviour
 
         _currentState = state;
 
-        Debug.Log($"{gameObject.name} ChangeState => {_currentState}");
+        //Debug.Log($"{gameObject.name} ChangeState => {_currentState}");
 
         switch (_currentState)
         {
