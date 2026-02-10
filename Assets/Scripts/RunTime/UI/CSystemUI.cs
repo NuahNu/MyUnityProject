@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -170,6 +169,9 @@ public class CSystemUI : MonoBehaviour
         _currentState = state;
 
         //Debug.Log($"{gameObject.name} ChangeState => {_currentState}");
+
+        if (_iconObject == null) return;
+
 
         switch (_currentState)
         {
