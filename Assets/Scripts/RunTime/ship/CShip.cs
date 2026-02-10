@@ -192,6 +192,7 @@ public class CShip : MonoBehaviour
 
         // 시스템의 함수를 부르는것으로 변경한다.
         _installedSystem[type].CurrentPower++;
+        _remainingPower--;
         //Debug.Log($"{gameObject.name}의 {type}system의 전력 {_installedSystem[type].CurrentPower}로 상승.");
         return true;
     }
@@ -203,6 +204,7 @@ public class CShip : MonoBehaviour
 
         // 시스템의 함수를 부르는것으로 변경한다.
         _installedSystem[type].CurrentPower--;
+        _remainingPower++;
         //Debug.Log($"{gameObject.name}의 {type}system의 전력 {_installedSystem[type].CurrentPower}로 감소.");
 
         return false;
