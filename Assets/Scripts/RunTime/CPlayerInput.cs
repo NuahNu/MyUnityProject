@@ -135,7 +135,7 @@ public class CPlayerInput : MonoBehaviour
             {
                 _ship.SupplyPower(CSystem.ESystemType.Medbay);
             }
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 _ship.SupplyPower(CSystem.ESystemType.Weapons);
             }
@@ -162,7 +162,7 @@ public class CPlayerInput : MonoBehaviour
             {
                 _ship.CutOffSupply(CSystem.ESystemType.Medbay);
             }
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 _ship.CutOffSupply(CSystem.ESystemType.Weapons);
             }
