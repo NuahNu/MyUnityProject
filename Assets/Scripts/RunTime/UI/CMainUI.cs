@@ -21,7 +21,12 @@ public class CMainUI : MonoBehaviour
 
     [Header("시스템 UI 시작 위치 및 간격")]
     [SerializeField] private Transform _systemUIOffse;
+    [SerializeField] private Transform _subSystemUIOffse;
     [SerializeField] private Vector2 _systemUIInterval = Vector2.zero;
+
+    [Header("사일로 UI")]
+    [SerializeField] private Transform _siloUIOffse;
+    [SerializeField] private List<CRawImageUI> _siloUI = new();
 
     [Header("캔버스")]
     [SerializeField] private Canvas _canvas;
@@ -71,6 +76,7 @@ public class CMainUI : MonoBehaviour
     {
         if (_allyChangeFlag)
         {
+            // 시스템 UI
             // 추가 코드
             for (int i = 0; i < (int)CSystem.ESystemType.Count; i++)
             {
@@ -109,6 +115,15 @@ public class CMainUI : MonoBehaviour
                 }
             }
             _allyChangeFlag = false;
+
+            // 사일로
+            // 추가 코드
+            if(_siloUI.Count < _allyShip.CurrentMaxPower)
+            {
+
+            }
+            //_allyShip.RemainingPower; // 만큼 바를 활성화한다.
+            // 새로 그리기?
         }
 
     }

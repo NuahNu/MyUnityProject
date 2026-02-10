@@ -42,7 +42,7 @@ public class CShip : MonoBehaviour
 
     [Header("전력")]
     [ReadOnly]
-    [SerializeField] private int _maxPower = 40;
+    [SerializeField] private int _maxPower = 32; //흑인이 강해봐
     [SerializeField] private int _currentMaxPower = 8;
     [ReadOnly]
     [SerializeField] private int _remainingPower = 8;
@@ -64,6 +64,9 @@ public class CShip : MonoBehaviour
     //private Dictionary<GameObject, string> childObjects; 
     private readonly Dictionary<CSystem.ESystemType, CSystem> _installedSystem = new();
     #endregion
+
+    public int CurrentMaxPower { get { return _currentMaxPower; } }
+    public int RemainingPower { get { return _remainingPower; } }
 
     public CMainUI MainUI { get { return _mainUI; } set { _mainUI = value; } }
 
