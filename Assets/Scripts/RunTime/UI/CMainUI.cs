@@ -14,25 +14,28 @@ public class CMainUI : MonoBehaviour
     [Header("플레이어 컨트롤러 (일단 함선을 직접 연결. 나중에 수정) ")]
     [SerializeField] private CShip _allyShip;
 
-    [SerializeField] private List<CSystemUI> _systemUIList = new();
 
     [Header("적 컨트롤러")]
     [SerializeField] private CShip _enemyShip;
 
     [Header("시스템 UI 시작 위치 및 간격")]
-    [SerializeField] private Transform _systemUIOffse;
-    [SerializeField] private Transform _subSystemUIOffse;
+    [SerializeField] private Transform _systemUIOffset;
+    [SerializeField] private Transform _subSystemUIOffset;
     [SerializeField] private Vector2 _systemUIInterval = Vector2.zero;
 
+    [SerializeField] private List<CSystemUI> _systemUIList = new();
+
     [Header("사일로 UI")]
-    [SerializeField] private Transform _siloUIOffse;
-    [SerializeField] private List<CRawImageUI> _siloUI = new();
+    [SerializeField] private Transform _siloUIOffset;
+    [ReadOnly]
+    [SerializeField] private CSiloUI _siloUI;
 
     [Header("캔버스")]
     [SerializeField] private Canvas _canvas;
 
     [Header("프리팹")]
     [SerializeField] private GameObject _systemUIPrefab;
+    [SerializeField] private GameObject _siloUIPrefab;
     #endregion
 
     #region 내부 변수
@@ -70,6 +73,16 @@ public class CMainUI : MonoBehaviour
         }
         _enemyShip.MainUI = this;
         _enemySystemDic = _enemyShip.InstalledSystem;
+
+        // 사일로 추가.
+        GameObject silo_ = Instantiate(_siloUIPrefab, _siloUIOffset);
+        silo_.transform.localPosition = Vector2.zero;
+
+        if(silo_.TryGetComponent(out CSiloUI siloUI))
+        {
+            siloUI.Ship = _allyShip;
+            _siloUI = siloUI;
+        }
     }
 
     void Update()
@@ -85,7 +98,7 @@ public class CMainUI : MonoBehaviour
                 if (_allySystemDic.ContainsKey(type) && !_allySystemUIDic.ContainsKey(type))
                 {
                     //type에 맞는 시스템 UI를 만든다.
-                    GameObject tmp = Instantiate(_systemUIPrefab, (CSystem.IsSubSystem(type) ? _subSystemUIOffse : _systemUIOffse));
+                    GameObject tmp = Instantiate(_systemUIPrefab, (CSystem.IsSubSystem(type) ? _subSystemUIOffset : _systemUIOffset));
 
                     tmp.name = type.ToString();
 
@@ -115,15 +128,6 @@ public class CMainUI : MonoBehaviour
                 }
             }
             _allyChangeFlag = false;
-
-            // 사일로
-            // 추가 코드
-            if(_siloUI.Count < _allyShip.CurrentMaxPower)
-            {
-
-            }
-            //_allyShip.RemainingPower; // 만큼 바를 활성화한다.
-            // 새로 그리기?
         }
 
     }

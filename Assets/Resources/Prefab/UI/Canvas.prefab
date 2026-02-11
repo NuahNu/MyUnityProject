@@ -223,11 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _allyShip: {fileID: 0}
-  _systemUIList: []
   _enemyShip: {fileID: 0}
-  _systemUIOffse: {fileID: 7481123338106518968}
-  _subSystemUIOffse: {fileID: 7205629044128360270}
+  _systemUIOffset: {fileID: 7481123338106518968}
+  _subSystemUIOffset: {fileID: 7205629044128360270}
   _systemUIInterval: {x: 36, y: 0}
-  _siloUIOffse: {fileID: 6500271116294235260}
+  _systemUIList: []
+  _siloUIOffset: {fileID: 6500271116294235260}
+  _siloUI: {fileID: 0}
   _canvas: {fileID: 5681178022465762148}
   _systemUIPrefab: {fileID: 8876500985157219898, guid: 7d8af1101be5d8f4c911d5ffe7a527c2, type: 3}
+  _siloUIPrefab: {fileID: 1613767551461208959, guid: d57bd016fa29c8846ad5515f67e06710, type: 3}

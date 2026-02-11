@@ -14,7 +14,7 @@ public class CRawImageUI : MonoBehaviour
     [Header("Main")]
     [SerializeField] private RawImage _mainRawImage;
     [Header("Glow")]
-    [SerializeField] private bool _glowFlag = false;
+    [SerializeField] private bool _glowFlag = false;    // 사용 여부와 현재 상태에 대해...
     [SerializeField] private RawImage _glowRawImage;
     #endregion
 
